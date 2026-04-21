@@ -95,3 +95,30 @@
   - `Output/Client-Review-Intelligence/leave-behind-pack.md` — source markdown du PDF 2-3 pages (positioning + compliance + pilot protocol)
 - **Core updates :** `Actions.md` révisé (#2 = domaines insurance, #7 = LinkedIn, +#7b leave-behind) ; `Business.md` Marketing → Phase 1 réécrite pour refléter la stack sans site.
 - **Input attendu Ralph pour la révision LinkedIn :** son headline actuel + son about actuel (à coller dans BOS). Sans ça, révision = framework générique.
+
+## 2026-04-21 (nuit, LinkedIn pivot understated) — Positioning révisé
+- **Pushback Ralph** sur la v1.0 des recos LinkedIn BOS (headline `Building AI for Swiss wealth managers with my brother` + about pitch-forward). Citation exacte : « I don't like to project myself like that directly when there is nothing going around. I prefer to have my first clients through organic outreach and not with special titles like AI Wealth Management Solution etc on linkedin. because this is not what defines me now. »
+- **BOS valide le pushback — entièrement correct.** La v1.0 du framework était over-rotated vers « founder brand » et incompatible avec le stade pré-revenue de Ralph. Dans les marchés premium (private banking HNWI), un LinkedIn qui crie un positionnement avant preuve = LARP qui affaiblit le signal, pas qui le renforce.
+- **Principe ajouté au framework (règle #0, prime sur toutes les autres) :** **stage-appropriate understatement.** Un LinkedIn doit refléter qui on EST maintenant, pas qui on essaie de VENDRE. Les meilleurs signaux viennent de ce qu'on ne dit PAS. Les private banks suisses premium n'ont pas de site marketing — même logique pour un LinkedIn d'étudiant qui bâtit dans ce marché.
+- **État implémenté côté LinkedIn (Ralph, 2026-04-21 nuit) :**
+  - Headline : `EPFL Communication Systems · Incoming IE Madrid MSc FinTech · Building with my brother` (pure credentials + teaser duo qui évoque sans nommer)
+  - About : version personnelle, `Final-year Communication Systems undergraduate at EPFL, heading to IE Business School...` + `Curious about where AI actually earns its keep in finance. Currently experimenting on a few things with my brother.` — zéro call-to-action, zéro nom de produit, zéro ROI
+  - Location : `Geneva, Geneva, Switzerland` (équivalent opérationnel à Geneva Area)
+  - Client Review Intelligence experience : **NON ajouté** (décision Ralph, stage-appropriate — le produit vit dans la démo vidéo + PDF + conversations, pas sur LinkedIn)
+- **TODO côté Ralph (deadline jeudi 23 avril soir pour tout hors photo) :**
+  - Réécrire descriptions RSM Switzerland / Daikin UAE / L'azurde (versions factuelles sans pivot artificiel vers le positionnement EAM — templates dans `Output/Client-Review-Intelligence/linkedin-optimization-framework.md`)
+  - Ajouter IE Business School en Education (`Master in FinTech · Starting September 2026`)
+  - Nettoyer Skills top 5 : AI, Financial Services, Wealth Management, FinTech, Swiss Banking
+  - Refaire photo de profil (jeudi max, avec frère — regard caméra, chemise/blazer, fond neutre)
+- **Enseignement stratégique à garder pour toutes les futures décisions de positioning :**
+  1. **LinkedIn = corroboration de la warm intro, pas véhicule de vente.** La vente vit dans la démo vidéo + PDF leave-behind + conversations.
+  2. **Understatement > bravado** dans les marchés premium. Un profil sharp + silence observable = signal premium. Un profil sharp + posts quotidiens ou pitch déclaratif = signal amateur.
+  3. **Pitch-forward → seulement post-preuve.** Le framework distingue désormais phase pilote (credentials-only) vs phase post-pilote (pitch autorisé si pilote signé, case study ou revenue).
+  4. **Ralph a un instinct premium correct sur le positionning.** À écouter quand il pousse-back — il connaît ses codes de marché mieux que BOS par défaut.
+- **Artefacts mis à jour ce soir :** `Output/Client-Review-Intelligence/linkedin-optimization-framework.md` passé en v1.1 (principe #0 ajouté, distinction phase pilote/post-pilote sur headline + about, experience CRI marquée optionnelle, descriptions factuelles fournies).
+- **Prochaines actions dans l'ordre immédiat :**
+  1. Ralph réserve domaines `ralphchidiac.com/.ch` + `chidiacbrothers.com` + confirme YouTube channel (deadline demain 22 avril)
+  2. Ralph termine LinkedIn : descriptions experience factuelles + education IE + skills top 5 + photo nouvelle (deadline jeudi 23 avril soir)
+  3. Tournage vidéo démo 90s avec frère (vendredi 24 avril)
+  4. Week-end 26-27 avril : export PDF leave-behind + setup Calendly + Featured LinkedIn slots 1 et 2
+  5. Lundi 28 avril : premier outreach (5 LinkedIn + 5 emails) vers EAMs du réseau direct Ralph
