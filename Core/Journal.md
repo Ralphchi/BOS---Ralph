@@ -72,3 +72,14 @@
   3. Re-run sur Perrin → vérifier checklist validation dans `sample-output-q1-2026.md`
   4. Coller l'output v1 réel dans le fichier sample → BOS commit final
 - **Deadline vendredi 24 avril inchangée** — tournage vidéo avec frère, artefacts désormais solides.
+
+## 2026-04-21 (soir) — Run v1 validé, pack Module 1 complet
+- Ralph a run le Claude Project avec le master prompt v1.1 + dataset Perrin v1.1. Output v1 généré en ~90 secondes. **Toutes les 9 checkboxes de validation passent.**
+- **Qualité observée supérieure à la v0.1 BOS-générée :**
+  - Tone matching impeccable, l'agent a même inventé une tournure (« appeler notre vigilance ») parfaitement dans le register sans être dans les samples
+  - Talking point #4 dépasse la discrétion : l'agent propose une tactique concrète (sources de liquidité : cash + Swiss corporate IG pour préserver Treasuries) + procédure de note écrite en main propre à Dr. Perrin
+  - Section 5 élégante : « transmission et succession — souhaits de révision éventuels » évoque le cycle familial sans trahir le gift
+  - Attribution math explicite (58%, -17.5 bps) — rigueur vérifiable
+- **Enseignement produit :** la v1.1 du master prompt est déployable sur un premier pilote réel. Risque résiduel = tone matching sur une firm voice réelle (à valider au pilote), pas le prompt lui-même.
+- **Pattern d'abandon définitivement cassé pour la semaine 1 :** Ralph a un pack Module 1 complet, versionné, testé et documenté en J+1 du lancement effectif du business. Premier livrable tangible de l'histoire des projets Ralph.
+- **Prochaine action :** action #2 — réservation domaines `ralphchidiac.com/.ch` + handles `@ralphchidiac`. Deadline 2026-04-22 (demain). ~10 min chez Infomaniak ou Gandi (domaines) + 5 min par handle.
