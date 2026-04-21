@@ -83,3 +83,15 @@
 - **Enseignement produit :** la v1.1 du master prompt est déployable sur un premier pilote réel. Risque résiduel = tone matching sur une firm voice réelle (à valider au pilote), pas le prompt lui-même.
 - **Pattern d'abandon définitivement cassé pour la semaine 1 :** Ralph a un pack Module 1 complet, versionné, testé et documenté en J+1 du lancement effectif du business. Premier livrable tangible de l'histoire des projets Ralph.
 - **Prochaine action :** action #2 — réservation domaines `ralphchidiac.com/.ch` + handles `@ralphchidiac`. Deadline 2026-04-22 (demain). ~10 min chez Infomaniak ou Gandi (domaines) + 5 min par handle.
+
+## 2026-04-21 (soir, pivot sales infra) — Pas de site web phase pilote
+- Ralph a pushback sur la reco BOS initiale (landing page `ralphchidiac.com`) avec deux arguments solides : (a) `ralphchidiac.com` est un asset de personal brand long terme (Chidiac Brothers), l'encombrer d'un landing EAM = dette de brand ; (b) Swiss EAM = culture ultra-relationnelle, bouche à oreille majoritaire, pas de besoin immédiat de site.
+- **BOS valide le pushback.** Précédents : Hormozi, Gadzhi — ventes par referrals/content avant landing. Swiss private banks premium n'ont souvent pas de site marketing. Pour les 3 premiers pilotes, les leads viendront exclusivement des warm intros.
+- **Sales stack phase pilote redéfinie (0 site web) :** LinkedIn optimisé (hub credibilité) + YouTube unlisted (démo vidéo) + Calendly (booking) + PDF leave-behind (post-call). Coût stack : 0 CHF.
+- **Domaines réservés comme insurance :** `ralphchidiac.com` + `ralphchidiac.ch` + `chidiacbrothers.com` à réserver demain chez Infomaniak (~CHF 45). Laisser vides phase 1.
+- **Handles :** Ralph a déjà LinkedIn, IG, X. YouTube `@ralphchidiac` à créer (même vide — channel host pour la vidéo unlisted). TikTok skip.
+- **Livrables BOS produits ce soir (2 nouveaux fichiers) :**
+  - `Output/Client-Review-Intelligence/linkedin-optimization-framework.md` — framework réutilisable (headline formula, about structure, featured, experience, education, photo checklist, banner, posts strategy)
+  - `Output/Client-Review-Intelligence/leave-behind-pack.md` — source markdown du PDF 2-3 pages (positioning + compliance + pilot protocol)
+- **Core updates :** `Actions.md` révisé (#2 = domaines insurance, #7 = LinkedIn, +#7b leave-behind) ; `Business.md` Marketing → Phase 1 réécrite pour refléter la stack sans site.
+- **Input attendu Ralph pour la révision LinkedIn :** son headline actuel + son about actuel (à coller dans BOS). Sans ça, révision = framework générique.

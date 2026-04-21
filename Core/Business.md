@@ -77,10 +77,15 @@ Done-for-you. Ralph + frère + ami backbone :
 - Message type : *« I'm Ralph Chidiac — EPFL engineering (finishing my Bachelor), heading to IE Madrid for a Master in FinTech this September. With my brother, we build AI systems for Swiss wealth managers that save RMs 4-6 hours per week on client review preparation. 30-day pilot at CHF 2 400 on 20 of your real clients — no PMS migration, plugs on your existing setup. Would 15 minutes next week work? »*
 - Activation réseau direct Ralph + events VSV/ASG + desks EAM custodiens (Julius Baer, UBP, Sygnum, Maerki Baumann)
 
-**Brand building semaine 1 :**
-- Hub : `ralphchidiac.com` + `ralphchidiac.ch` (1-pager positionnement + offre + CTA 15-min call)
-- Social : `@ralphchidiac` sur IG/LinkedIn/X/YouTube — contenu 100% EN autour des builds IA pour wealth management
-- Ton : intello-premium, EPFL-backed, pas bombast
+**Sales stack phase pilote (pas de site web — décision 2026-04-21 soir) :**
+- **LinkedIn profil optimisé** (hub credibilité) : headline + about + Featured section avec vidéo démo embedded + lien Calendly + experience CRI + education. Framework de révision dans `Output/Client-Review-Intelligence/linkedin-optimization-framework.md`.
+- **YouTube `@ralphchidiac`** pour héberger la vidéo démo 90s en **unlisted** (visible seulement avec le lien).
+- **Calendly `calendly.com/ralphchidiac`** — 15-min Client Review Intelligence Discovery Call. Free tier suffit.
+- **PDF leave-behind pack** (2-3 pages A4) envoyé en email post-call aux EAMs intéressés. Source MD dans `Output/Client-Review-Intelligence/leave-behind-pack.md`.
+- **Domaines réservés en insurance :** `ralphchidiac.com/.ch` + `chidiacbrothers.com`. Sites vides phase 1 — pas d'overbuild.
+- **Ton :** intello-premium, EPFL-backed, pas bombast. Silence observable sur LinkedIn (pas de posts) = signal premium pour marché wealth management suisse.
+- **Raison :** Swiss EAM = culture ultra-relationnelle, 3 premiers pilotes viendront des warm intros (réseau direct Ralph + liste père Dubai + futur IE Madrid). Un advisor ne signe jamais parce qu'il a vu une landing page — il signe parce que quelqu'un de confiance a dit ton nom.
+- **Phase 2 (post-pilote #1) :** landing page + contenu EN régulier sur LinkedIn/YouTube réévalués selon besoin réel.
 
 ### Phase 2 — Dubai (été 2026)
 - Pack 1-pager EN + démo vidéo + case study Swiss (si dispo)
