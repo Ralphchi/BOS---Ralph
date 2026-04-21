@@ -1,7 +1,7 @@
 # Diagnostic
 
 **Dernière MAJ :** 2026-04-20 (mise à jour post-recherche marché + naming Helvio verrouillé)
-**Bottleneck :** Aucune preuve / aucun livrable existant. Tant que Ralph n'a pas construit et livré *Helvio Client Review Intelligence* à un premier EAM suisse, tout le reste de l'écosystème (contenu crédible, autorité, cohort future) est bloqué par manque de substance.
+**Bottleneck :** Aucune preuve / aucun livrable existant. Tant que Ralph n'a pas construit et livré *Client Review Intelligence* à un premier EAM suisse, tout le reste de l'écosystème (contenu crédible, autorité, cohort future) est bloqué par manque de substance. Mis à jour 2026-04-21 après-midi : artefacts Module 1 v1.1 hardened (compliance-onepager, pilot-measurement-protocol, master prompt révisé, sample output, script vidéo math corrigée) livrés — il reste le tournage vidéo (24 avril) + le premier outreach pour faire exister l'angle pilote.
 
 ---
 
@@ -50,6 +50,18 @@
 - **Preuves :** Frère « enthousiaste » mais sans engagement formalisé. Ami backbone pas encore briefé sur le projet défini aujourd'hui.
 - **Traitement :** Conv formelle avec frère cette semaine. Brief ami travailleur cette semaine. Accord écrit simple avant premier client.
 
+### 6. Compliance layer pas structurée (identifié 2026-04-21 par critique agent)
+- **Impact :** Bloquant au premier call EAM. Toute affirmation « Swiss-hosted FINMA 08/2024 compliant » est intenable tant qu'on utilise claude.ai (US cloud). Un compliance officer détecte l'inconsistance en 5 minutes — pas de signature, perte de crédibilité, risque juridique résiduel (art. 47 LB) si Ralph suggère aux advisors de coller des données réelles.
+- **Preuves :** (a) Le Claude Project lui-même a flaggé le point au premier test. (b) Sources réglementaires : FINMA Circular 2023/1 (critical data), FINMA Guidance 08/2024 (AI governance), SBA Cloud Guidelines (3rd ed. Nov 2025), art. 47 LB, revised FADP 2023.
+- **Cause racine :** Gap entre positionnement marketing (« Swiss-hosted, FINMA compliant ») et infrastructure réelle (Anthropic US). Ralph a construit l'offre avant de faire le diligence compliance — ordre à inverser pour tout nouveau module.
+- **Traitement (livré 2026-04-21 après-midi) :**
+  - `Output/Client-Review-Intelligence/compliance-onepager.md` — cadre juridique + data flow pseudonymisation + DPA skeleton
+  - `Output/Client-Review-Intelligence/pilot-measurement-protocol.md` — baseline/remeasure reproductible
+  - Dataset Perrin revu avec version pseudonymisée montrant le protocole
+  - Positionnement `Business.md` aligné : pilote = pseudonymized inputs, full deployment = Swiss-hosted
+  - Master prompt v1.1 avec règles de discretion handling + attribution rigour
+- **Reste à faire avant premier outreach :** DPA template exécutable (PDF), pseudonymization SOP step-by-step screencast pour l'advisor (2 min), éventuelle consultation d'un avocat Suisse FinTech (budget CHF 500-1 500) pour relire le pack contractuel — à valider après premier call EAM intéressé.
+
 ---
 
 ## Historique
@@ -59,3 +71,4 @@
 | 2026-04-20 | Diagnostic initial créé | Onboarding. Direction validée : AI-for-FinTech services (niche : wealth managers) → marque perso jumeaux → communauté premium à mois 18. Endgame Tate/Yomi, parcours clean. |
 | 2026-04-20 | MAJ post-info Dubai + EN brand | Intégration famille Dubai + réseau multi-pays + décision brand anglophone → séquencement Suisse → Dubai → Madrid. |
 | 2026-04-20 | MAJ post-recherche marché + naming | Validation marché Swiss EAM. Pivot offre : single-module (Module 1 *Client Review Intelligence* only) au lancement. Positionnement verrouillé : « AI commentary layer on top of existing PMS, Swiss-hosted, FINMA 08/2024 compliant ». Pricing CHF only phase 1 (pilot 2 400, deploy 7 900 + 499/mois). Naming company : **Helvio** verrouillé (Kairos et Argentum RED, Helvio GREEN sur tous les axes). Personal brand : *The Chidiac Brothers*. |
+| 2026-04-21 | Hardening Module 1 post-critique agent | Le Claude Project a flaggé 5 issues matérielles au premier test. Fixes appliqués : (1) FINMA positioning revu → pseudonymisation côté advisor pour le pilote, Swiss-hosted comme feature full deployment ; (2) refund trigger mesurable avec baseline/remeasure self-loggué par l'advisor ; (3) master prompt v1.1 avec règles addressee scope & register, discretion handling, attribution rigour ; (4) dataset Perrin revu (flag discreet sur gift CHF 300k, register 1:1) ; (5) math vidéo corrigée (100 workdays/an au lieu de « almost 30 » erroné) ; (6) ajout problème compliance layer au diagnostic (voir #6). Artefacts livrés : compliance-onepager.md + pilot-measurement-protocol.md. |

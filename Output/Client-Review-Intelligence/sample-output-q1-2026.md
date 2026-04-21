@@ -1,38 +1,47 @@
-# Sample output — Client Review Intelligence v1
+# Sample output — Client Review Intelligence v1.1
 
-**Client :** Marc Perrin (fictif)
+**Client :** Dr. Marc Perrin (fictif)
 **Trimestre :** Q1 2026
 **Langue détectée :** FR (depuis firm_voice_sample)
-**Date run :** 2026-04-21
-**Version prompt :** v1
+**Date run :** 2026-04-21 (après-midi, post-hardening)
+**Version prompt :** v1.1
 
 ---
 
 ## Statut
 
-- [x] **v0 — BOS-généré** (exemple indicatif, ci-dessous)
+- [x] **v0.1 — BOS-généré** (exemple indicatif post-hardening, ci-dessous)
 - [ ] **v1 — Run réel dans Claude Project** (à remplir par Ralph après création du Project)
+
+**Changelog :**
+- v0.1 (2026-04-21, après-midi) : ouverture 1:1 « Cher Dr. Perrin » ; gift CHF 300k retiré de Section 5 → uniquement Section 6 ; attribution Nestlé phrasée rigoureusement (≈58% du gap, pas « principalement »).
+- v0 (2026-04-21, matin) : version initiale — 4 issues critiques détectées par l'agent (voir plan `.claude/plans/fichiers-jour-claude-md-squishy-scroll.md`).
 
 ---
 
-## v0 — Output indicatif (généré par BOS lors de la construction du prompt)
+## v0.1 — Output indicatif (BOS-généré, post-hardening)
 
 ```
 === 1. EXECUTIVE SUMMARY ===
-Chers clients, le premier trimestre 2026 s'inscrit dans la continuité prudente qui 
-caractérise votre allocation. Votre portefeuille progresse de +1.8% sur la période, 
-dans un contexte où la détente monétaire européenne a soutenu les actifs obligataires 
-et où le segment du luxe européen a retrouvé la vigueur que nous anticipions depuis 
-plusieurs trimestres. Nous restons attentifs au positionnement défensif, et seules 
-quelques observations méritent d'être partagées — en particulier concernant votre 
-exposition directe à Nestlé, dont la performance relative continue de poser question.
+Cher Dr. Perrin, le premier trimestre 2026 s'inscrit dans la continuité prudente 
+qui caractérise votre allocation. Votre portefeuille progresse de +1.8% sur la 
+période, dans un contexte où la détente monétaire européenne a soutenu les actifs 
+obligataires et où le segment du luxe européen a retrouvé la vigueur que nous 
+anticipions depuis plusieurs trimestres. Nous restons attentifs au positionnement 
+défensif, et quelques observations méritent d'être partagées avec vous — en 
+particulier concernant votre exposition directe à Nestlé, dont la performance 
+relative continue de poser question.
 
 === 2. PERFORMANCE REVIEW ===
 Votre portefeuille affiche une performance nette de +1.8% sur le premier trimestre 
 2026, contre +2.1% pour votre indice de référence composite. Cet écart de 30 points 
-de base s'explique principalement par la contribution négative de votre exposition 
-directe à Nestlé (-2.4%), que votre attachement historique à la valeur nous conduit 
-à conserver malgré nos observations répétées sur ses perspectives à court terme.
+de base s'explique pour environ 60% par la contribution négative de votre exposition 
+directe à Nestlé (-17 bps sur le total portefeuille, issue d'un recul de -2.4% de la 
+valeur sur la période, pondérée à 7.3% de votre allocation). Le solde provient 
+principalement de l'or (CHF-hedged) et du fonds immobilier suisse, chacun 
+contribuant marginalement au retard. Votre attachement historique à Nestlé nous 
+conduit à conserver la position malgré nos observations répétées sur ses 
+perspectives à court terme.
 
 Du côté des contributions positives, votre panier de valeurs de luxe européen s'est 
 distingué avec une progression de +8.2%, portée principalement par Richemont et LVMH. 
@@ -54,32 +63,31 @@ elle demeure notre principal allié dans la préservation du capital.
 
 Deuxièmement, le retour de la consommation haut de gamme chinoise, qui a directement 
 bénéficié à votre panier luxe. Ce mouvement mérite d'être surveillé : il pourrait 
-justifier un léger renforcement tactique, mais nous recommandons de ne pas augmenter 
-cette poche au-delà du niveau actuel — la discipline de l'allocation reste plus 
-créatrice de valeur que les convictions sectorielles isolées.
+justifier un léger renforcement tactique, mais nous vous recommandons de ne pas 
+augmenter cette poche au-delà du niveau actuel — la discipline de l'allocation reste 
+plus créatrice de valeur que les convictions sectorielles isolées.
 
 Troisièmement, la faiblesse persistante de Nestlé sur son segment eaux (suites du 
 dossier Perrier) et ses marchés émergents. Nous continuons d'observer la valeur 
-avec attention, tout en respectant votre attachement personnel.
+avec attention, tout en respectant votre attachement personnel à la position.
 
 === 4. OUTLOOK & POSITIONING ===
-Pour le trimestre à venir, nous maintenons notre positionnement défensif, adapté à 
+Pour le trimestre à venir, nous maintenons votre positionnement défensif, adapté à 
 vos objectifs de préservation du capital et de liquidité philanthropique récurrente. 
 Nous n'apporterons que des ajustements mineurs tant que la visibilité macroéconomique 
 reste celle d'aujourd'hui — un environnement de désinflation contrôlée et de taux 
 durablement bas.
 
-Compte tenu de votre projet familial estival, nous veillerons à maintenir une poche 
-de liquidité confortable sur les deux prochains mois, sans dégrader la position 
-obligataire d'ensemble.
+Nous veillerons à maintenir sur les prochains mois une poche de liquidité 
+confortable, sans dégrader la position obligataire d'ensemble.
 
 === 5. MEETING AGENDA ===
-• Performance du trimestre et explication du léger écart vs indice de référence
+• Performance du trimestre et explication de l'écart de 30 bps vs indice de référence
 • Point sur Nestlé : perspectives, décision à prendre à moyen terme
-• Confirmation de la poche luxe — satisfaction du client, pas de renforcement
-• Projet familial CHF 300k cet été : préparation de la liquidité
+• Confirmation de la poche luxe — satisfaction, pas de renforcement
 • Vue macro Q2 2026 et positionnement défensif
-• Point ouvert : naissance à venir + éventuelle révision de la clause successorale
+• Revue rapide des dérives d'allocation (dans les bandes)
+• Point ouvert : succession — dois-je anticiper une révision d'éléments de la clause ?
 
 === 6. TALKING POINTS (ADVISOR-ONLY) ===
 • Introduire la question Nestlé avec délicatesse — attachement émotionnel fort, 
@@ -87,11 +95,13 @@ obligataire d'ensemble.
   continue encore 2 trimestres »
 • Confirmer warmly les choix de luxe — la bonne décision se célèbre, pas seulement 
   les mauvaises se corrigent
-• Anticiper le projet fille aînée : préparer proactivement la sortie de liquidités 
-  (suggérer de prélever sur cash + fonds Swiss corporate IG pour préserver la 
-  position Treasuries)
+• **[DISCRET — advisor-only]** Anticiper proactivement le gift CHF 300k prévu cet 
+  été pour la fille aînée : préparer le dégagement de liquidité (suggérer de 
+  prélever sur cash + fonds Swiss corporate IG pour préserver la position Treasuries) 
+  AVANT que le client ait à en parler. Ne pas mentionner ce point si la fille ou 
+  Mme Perrin sont présentes en réunion.
 • Mentionner l'arrivée du petit-enfant en premier — moment humain avant les chiffres, 
-  ça cadre la réunion dans la relation avant le transactionnel
+  cadre la réunion dans la relation avant le transactionnel
 • Ne pas ouvrir le sujet ESG cette fois — rien de matériel à signaler ce trimestre, 
   on gère l'attention du client
 ```
@@ -100,7 +110,7 @@ obligataire d'ensemble.
 
 ## v1 — Run réel (à remplir)
 
-Quand Ralph lance le run dans le Claude Project, copier l'output ici et updater le statut.
+Quand Ralph lance le run dans le Claude Project avec la v1.1 du master prompt, coller l'output ici et updater le statut.
 
 ```
 (à remplir après le run dans Claude Project)
@@ -108,9 +118,12 @@ Quand Ralph lance le run dans le Claude Project, copier l'output ici et updater 
 
 ## Critères de validation (à cocher après v1)
 
-- [ ] Tone match les firm_voice_sample (utilise « Chers clients », « continuité prudente », etc.)
-- [ ] Mentionne Sylvie / grand-enfant / gift fille aînée → personnalisation OK
+- [ ] Ouverture = `Cher Dr. Perrin` (PAS `Chers clients`)
+- [ ] Aucune mention du CHF 300k gift en Section 5 (Agenda)
+- [ ] CHF 300k gift présent en Section 6 avec flag `[DISCRET — advisor-only]`
+- [ ] Attribution Nestlé phrasée en bps + pourcentage du gap (pas `principalement`)
 - [ ] Talking points advisor-only distincts des sections client
 - [ ] Aucune mention IA / génération
 - [ ] Numbers cohérents (1 décimale pour %, CHF sans décimales si >1 000)
 - [ ] Aucune donnée inventée (toute info vient des 5 blocs input)
+- [ ] Voice : `Votre portefeuille`, `Votre allocation`, jamais `vos portefeuilles`

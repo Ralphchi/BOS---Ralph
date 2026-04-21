@@ -50,3 +50,25 @@
   1. Créer Claude Project `Client Review Intelligence v1` sur claude.ai, coller master prompt en instructions, uploader dataset + samples en knowledge, inviter frère
   2. Run réel sur Perrin, coller output dans `sample-output-q1-2026.md`, commit
 - **Prochaine action post-validation :** enchaîner sur action #2 (réservation domaines `ralphchidiac.com/.ch` + handles, deadline demain 22 avril).
+
+## 2026-04-21 (fin d'après-midi) — Hardening Module 1 post-critique agent
+- Ralph a créé le Claude Project `Client Review Intelligence v1` et a tenté le run. L'agent a **refusé de runner immédiatement** et a produit de lui-même une critique senior-grade de 5 issues matérielles + 2 secondaires avant même de recevoir les 5 blocs.
+- **Issues flaggées :** (1) FINMA/Swiss banking secrecy dealbreaker sur pilote `real clients` → cloud US ; (2) refund trigger `<50%` non mesurable = risque juridique ; (3) voice register `Chers clients` incohérent avec destinataire 1 personne ; (4) gift CHF 300k `discreet` apparaît en Section 5 Agenda qui circule ; (5) math vidéo fausse (30 workdays/an au lieu de 100). Deux secondaires : pricing vs valeur non cadré, attribution math hand-wavy.
+- **Décision stratégique :** Chemin A (pseudonymisation + positionnement aligné) retenu sur Chemin B (overbuild Azure Switzerland). Logique : le pilote est un proof of value, pas une production-grade platform. Swiss-hosted devient un argument d'upsell du full deployment, pas un prérequis pilote.
+- **Artefacts livrés (9 fichiers touchés) :**
+  - Master prompt v1.1 — 3 nouvelles règles non-négociables (addressee scope & register, discretion handling, attribution rigour)
+  - Dataset Perrin v1.1 — voice samples en 1:1 `Cher Dr. Perrin`, flag `[discreet]` sur gift, section « version pseudonymisée » pour le protocole pilote
+  - Sample output v0.1 — ouverture `Cher Dr. Perrin`, gift en Section 6 uniquement, attribution Nestlé phrasée en bps (≈60% du gap, plus « principalement »)
+  - Script vidéo v1.1 — math corrigée (100 workdays/an, « five months of full-time work »), CTA compliance (pseudonymized inputs), CTA refund avec baseline/remeasure
+  - **compliance-onepager.md (NEW)** — cadre juridique Swiss (art. 47 LB, FINMA 2023/1, FINMA 08/2024, SBA Cloud Guidelines, FADP), data flow, champs pseudonymisés, Anthropic commercial-tier no-training policy, migration Swiss-hosted post-pilote
+  - **pilot-measurement-protocol.md (NEW)** — baseline 3 reviews W0 self-loggué par advisor, intervention 28 jours, remeasure 3 reviews W4, formule `(baseline - intervention) / baseline < 0.50 → refund`
+  - `Core/Business.md` — positionnement revu (pilot pseudonymized, full deployment Swiss-hosted)
+  - `Core/Diagnosis.md` — problème #6 ajouté (compliance layer), bottleneck mis à jour, historique updated
+  - `Core/Actions.md` — action 1.5 (hardening) ajoutée et marquée terminée, action 3 (vidéo) updated pour référencer le script v1.1
+- **Enseignement stratégique :** le fait que l'agent ait produit une critique senior AVANT d'accepter de runner est un signal puissant que Claude Sonnet/Opus sur ce genre de prompt se comporte comme un analyste senior, pas un exécutant aveugle. À garder pour le pitch : « our system pushes back before it runs — it won't let an advisor ship a compromised review ».
+- **Prochaine étape immédiate Ralph :**
+  1. Recharger le master prompt **v1.1** dans le Claude Project (écraser l'ancien)
+  2. Re-uploader dataset Perrin v1.1 + sample output v0.1 en knowledge (écraser)
+  3. Re-run sur Perrin → vérifier checklist validation dans `sample-output-q1-2026.md`
+  4. Coller l'output v1 réel dans le fichier sample → BOS commit final
+- **Deadline vendredi 24 avril inchangée** — tournage vidéo avec frère, artefacts désormais solides.

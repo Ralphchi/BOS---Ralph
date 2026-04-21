@@ -22,7 +22,8 @@
 
 **Flagship unique : *Client Review Intelligence* — an AI system for Swiss wealth managers, built by Ralph Chidiac (EPFL) and his brother.**
 
-- **Positionnement :** « An AI commentary layer that sits on top of your existing PMS. Works with Assetmax, WealthArc, WIZE, Expersoft, or custodian PDFs. Swiss-hosted, FINMA 08/2024 compliant, tone-trained on your firm's voice. »
+- **Positionnement :** « An AI commentary layer that sits on top of your existing PMS. Works with Assetmax, WealthArc, WIZE, Expersoft, or custodian PDFs. **Pilot phase: pseudonymized inputs — no direct client identifiers leave your perimeter.** Full deployment: Swiss-hosted (Azure Switzerland), FINMA 08/2024-aligned governance, tone-trained on your firm's voice. »
+- **Compliance posture (révisée 2026-04-21) :** le pilote tourne sur des inputs pseudonymisés côté advisor AVANT envoi à Claude (US cloud). Les identifiants clients ne sortent jamais du périmètre de l'EAM. Migration Swiss-hosted (Azure Switzerland) = feature du full deployment, argument d'upsell naturel. Voir `Output/Client-Review-Intelligence/compliance-onepager.md`.
 - **Livrable :** à chaque review trimestrielle, l'agent ingère le portfolio snapshot + news du trimestre, et sort : performance analysis + personalized commentary dans le ton de la firme + meeting-prep brief + branded PDF ready-to-send.
 - **ROI démontrable :** 4-6h/RM/semaine récupérées, 80-140k CHF de temps qualifié libéré par an.
 - **Modules 2 (Prospect Intelligence) et 3 (Compliance Prep) :** roadmap interne. Upsell post-Module 1 signé uniquement.
@@ -34,7 +35,7 @@
 | **Pilot 30 jours** | **CHF 2 400** | 1 RM, 20 clients test, démo live, crédité à 100% si conversion |
 | **Full Deployment** | **CHF 7 900 setup + CHF 499/mois** | Toute la firme, intégration PMS, formation, support |
 
-**Garantie :** remboursement intégral si économie de temps <50% sur le scope mesuré.
+**Garantie :** remboursement intégral si économie de temps <50% sur le scope mesuré. Protocole de mesure documenté et annexé au contrat (baseline self-loggué par l'advisor en semaine 0, remeasure en semaine 4). Voir `Output/Client-Review-Intelligence/pilot-measurement-protocol.md`.
 
 **Paiement :** CHF phase 1 (Suisse). USD ajouté pour Dubai phase 2.
 
