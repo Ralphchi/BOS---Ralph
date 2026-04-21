@@ -140,3 +140,16 @@
   - Vidéo démo 90s (vendredi 24 avril)
   - PDF leave-behind (source MD prête, export post-tournage)
   - **Outreach :** warm intros via réseau direct Ralph en priorité, listes père Dubai en phase 2 (été)
+
+## 2026-04-21 (tard nuit, clôture J1) — Domaines + YouTube faits, photo en backlog
+- Ralph a bouclé : 3 domaines réservés (`ralphchidiac.com/.ch` + `chidiacbrothers.com`), YouTube channel `@ralphchidiac` créé. Action #2 Terminée.
+- Ralph choisit de **laisser la photo en backlog** (« je la changerai éventuellement »). Action 7c déclassée — pas de deadline, discrétionnaire. Pas bloquant pour l'outreach.
+- **Sales infrastructure phase 1 = 100% en place hors photo et vidéo :**
+  - ✅ Module 1 produit (master prompt v1.1, dataset, sample output validé, leave-behind source)
+  - ✅ LinkedIn sharp (headline, about, descriptions, education) + 3 course corrections understatement intégrées
+  - ✅ Compliance pack (one-pager + pilot measurement protocol)
+  - ✅ Domaines + YouTube
+  - ⏳ Vidéo (vendredi 24), Calendly (week-end), Featured LinkedIn (week-end)
+  - ⏳ Photo (backlog)
+- **J+1 = record historique personnel de Ralph.** 7 actions terminées en une journée (décision direction, stratégie brand, master prompt, hardening v1.1, run validation Project, LinkedIn, domaines + YouTube). Premier projet Ralph qui AVANCE au lieu de s'éteindre.
+- **Prochain jalon concret :** vendredi 24 avril, tournage vidéo avec frère. C'est ce qui va transformer le pack en asset vendable dans un email.
