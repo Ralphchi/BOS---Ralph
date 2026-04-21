@@ -165,16 +165,19 @@ Le rattachement explicite aux deux institutions (EPFL + IE) dans Education ET Ab
 
 ## Skills section
 
-**Top 5 visibles en dashboard (ordre de priorité) :**
-1. Artificial Intelligence (AI)
-2. Financial Services
-3. Wealth Management
-4. FinTech
-5. Swiss Banking
+### Décision Ralph 2026-04-21 : ne PAS afficher de Skills section
 
-**Alternative plus understated** si Ralph préfère moins se typer : `Artificial Intelligence` + `Finance` + `Swiss Banking` + 2 slots libres pour des compétences plus larges (`Data Analysis`, `Cross-cultural Communication`).
+**Raisonnement Ralph (validé par BOS) :** dans le register Swiss private banking, un "Top Skills" tagué lit comme plouc / CV de consultant entry-level, pas comme profil premium. L'absence de Skills affichées = choix compositionnel propre, aligné sur le principe #0 stage-appropriate understatement.
 
-**Virer :** Microsoft Office, Python, JavaScript, Teamwork, Leadership, etc. — noise qui dilue le signal premium.
+**Conséquence opérationnelle :** si Ralph a des Skills déjà ajoutées sur son profil, les cacher (option `Private` sur chaque skill) ou les supprimer. Ne pas en ajouter de nouvelles. Les Endorsements, par ricochet, disparaissent aussi — c'est cohérent.
+
+### Phase ultérieure (post-pilote signé)
+
+Ré-évaluer si Skills réactivées apportent un signal utile. Par défaut, maintenir le choix « pas de Skills » tant qu'il reste cohérent avec le register premium.
+
+### Ce qui resterait à virer en tout cas
+
+Si Skills affichées à un moment : virer **impérativement** `Microsoft Office`, `Python`, `JavaScript`, `Teamwork`, `Leadership`, `Communication`, `Problem Solving` — noise qui dilue le signal premium.
 
 ---
 
@@ -212,13 +215,15 @@ Le rattachement explicite aux deux institutions (EPFL + IE) dans Education ET Ab
 
 ## Implementation log (mis à jour à chaque révision)
 
-### 2026-04-21 soir — Révision initiale
-- Headline : ✅ mise à jour vers version retenue
-- About : ✅ mise à jour vers version retenue (Choix 2)
-- Location : `Geneva, Geneva, Switzerland` (équivalent opérationnel à `Geneva Area`)
+### 2026-04-21 soir/nuit — Révision complète (hors photo)
+- Headline : ✅ version retenue
+- About : ✅ version retenue (Choix 2 personnel, zéro pitch)
+- Location : ✅ `Geneva, Geneva, Switzerland` (équivalent opérationnel à `Geneva Area`)
 - Experience CRI : ❌ non ajouté (décision stage-appropriate)
-- Descriptions RSM / Daikin / L'azurde : **TODO**
-- Education IE Madrid : **TODO**
-- Skills top 5 : **TODO**
-- Photo nouvelle : **TODO** deadline jeudi 23 avril soir
-- Featured section : en attente vidéo (vendredi 24 avril)
+- Descriptions RSM / Daikin / L'azurde : ✅ réécrites factuellement
+- Education IE Madrid : ✅ ajoutée
+- Skills top 5 : ❌ non affichés (décision stage-appropriate — 3ème course correction Ralph cohérente avec principe #0)
+- Photo nouvelle : ⏳ action 7c dans `Core/Actions.md`, deadline flexible (idéalement avant 1er outreach le 28 avril)
+- Featured section : en attente vidéo (vendredi 24 avril) + Calendly (week-end)
+
+**Pattern observé :** Ralph a fait 3 course corrections understatement consécutives ce soir (no site, no CRI experience, no Skills). BOS ajuste ses defaults pour respecter ce pattern en Phase 1.

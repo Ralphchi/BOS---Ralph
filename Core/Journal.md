@@ -122,3 +122,21 @@
   3. Tournage vidéo démo 90s avec frère (vendredi 24 avril)
   4. Week-end 26-27 avril : export PDF leave-behind + setup Calendly + Featured LinkedIn slots 1 et 2
   5. Lundi 28 avril : premier outreach (5 LinkedIn + 5 emails) vers EAMs du réseau direct Ralph
+
+## 2026-04-21 (nuit, clôture LinkedIn) — Profil finalisé (hors photo)
+- **LinkedIn sharp livré.** Toutes les pièces understated en place : headline (EPFL/IE/Building with brother), about personnel, location Genève, Education IE ajoutée, descriptions RSM/Daikin/L'azurde réécrites factuellement.
+- **3ème course correction Ralph (pattern solide) :** refus d'afficher une section Skills — jugée "plouc" dans le register Swiss private banking. **BOS valide.** Dans ce marché, un "Top Skills" tagué (Artificial Intelligence, FinTech, etc.) lit comme CV de consultant entry-level, pas comme profil premium. L'absence de Skills = signal compositionnel propre.
+- **Pattern des 3 course corrections consécutives de Ralph ce soir :**
+  1. Pas de site web phase pilote
+  2. Pas de Client Review Intelligence en experience LinkedIn (pre-pilot signé)
+  3. Pas de Skills section affichée
+  **Principe commun : stage-appropriate understatement.** Ralph a un instinct natif supérieur à celui de BOS par défaut pour ce marché. À respecter systématiquement en Phase 1. BOS ajustera ses recos futures pour ne plus proposer ces éléments par défaut en phase pré-revenue.
+- **Seul élément LinkedIn restant : photo de profil.** Action 7c créée avec deadline flexible (idéalement avant 1er outreach le 28 avril).
+- **Sales stack phase pilote désormais :**
+  - LinkedIn sharp understated ✅
+  - YouTube channel (à créer — action 2)
+  - Domaines insurance (à réserver — action 2)
+  - Calendly (post-vidéo)
+  - Vidéo démo 90s (vendredi 24 avril)
+  - PDF leave-behind (source MD prête, export post-tournage)
+  - **Outreach :** warm intros via réseau direct Ralph en priorité, listes père Dubai en phase 2 (été)
