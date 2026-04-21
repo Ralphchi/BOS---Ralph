@@ -183,6 +183,17 @@ Quand BOS voit dans `Business.md` que l'entrepreneur utilise un outil avec une i
 - **Common_Problems.md** — Catalogue des 30 problèmes entrepreneurs les plus fréquents. Aide BOS à détecter les issues plus vite et proposer des solutions calibrées.
 - **Yomi_Business_Principles.md** — Principes business distillés des vidéos de Yomi Denzel. Source de vérité quand BOS doit convaincre, illustrer ou recadrer.
 
+### my_vault/ — Wiki personnel de Ralph (externe, lecture seule)
+
+Ralph maintient un wiki personnel séparé à `~/Projects/my_vault` (repo GitHub `Ralphchi/my_vault`). C'est sa base de connaissances générale : sources ingérées, entités, concepts, syntheses. Schéma défini dans son propre `CLAUDE.md`. Le dossier est accessible en lecture depuis les sessions BOS via `additionalDirectories` dans `.claude/settings.local.json`.
+
+**Quand consulter le vault :**
+- Diagnostiquer un pattern récurrent — chercher si un concept existe déjà dans `my_vault/wiki/concepts/`.
+- Citer un principe / framework — préférer la version déjà paraphrasée dans le vault à une reformulation à la volée.
+- Identifier une personne / entreprise mentionnée — chercher dans `my_vault/wiki/entities/`.
+
+**Ne jamais écrire dans `my_vault/` depuis une session BOS.** Le vault a son propre workflow (ingest / query / lint) géré depuis son repo. Si un échange BOS produit du contenu qui vaut d'être ingéré, le signaler à Ralph — il l'ajoutera depuis le repo `my_vault`.
+
 ### Output/ — Artefacts générés
 Rapports, analyses, plans, copy, et autres livrables générés par BOS. Datés. Pas la source de vérité pour l'état actuel (ça c'est Core/).
 
