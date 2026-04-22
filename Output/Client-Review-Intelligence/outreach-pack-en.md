@@ -215,7 +215,9 @@ Both objections will come up in most serious discovery calls. **Have the answers
 
 ### The frame that unifies both objections
 
-> *"We are not competing with 'doing nothing.' We are competing with what 30-50% of your peers are already doing silently with ChatGPT. CRI is that productivity gain, under compliance controls, with measurement attached."*
+> *"Your advisors today are writing quarterly reviews in one of four ways — by hand, with a junior analyst, through offshore drafting, or by improvising silently on ChatGPT. In the next 12 to 24 months, a fifth option arrives: your PMS vendor adds an AI button. None of those options solve both the productivity problem and the compliance problem. CRI is designed to be the one that does — pseudonymization-first, PMS-agnostic, measurement-attached, and deployable independently of whatever your PMS decides to build."*
+
+Notice what this frame does : no made-up percentages, no moralising. It names the five real options the firm has, and positions CRI as the sixth — the only one that combines productivity and compliance structurally.
 
 ### Rehearsal rule
 

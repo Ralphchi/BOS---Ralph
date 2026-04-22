@@ -30,11 +30,25 @@
 
 **Commercial terms:** sold to boutique EAMs (3-30 FTE, FINMA-licensed) as a 30-day pilot at **CHF 2,400**, convertible to a full deployment at **CHF 7,900 setup + CHF 499/month**. The pilot is the sales motion; the deployment is the revenue engine.
 
-### What I'm competing with
+### What I'm competing with — three horizons
 
-The real competition is not "doing nothing" — that is the old guard, slow and hand-written. The real competition is **what an estimated 30-50% of Swiss advisors are already doing silently: pasting cleartext client data into ChatGPT**, drafting commentary, editing, sending. This is fast and convenient — and it is a compliance violation waiting to be discovered. Art. 47 BA, FINMA 08/2024, the revised FADP all apply. Any DPO who audits will find it.
+CRI does not compete against a single alternative. It competes across three horizons simultaneously, and its moat has to hold against all three.
 
-CRI is not "AI entering a market without AI." CRI is **the compliant, audited path to the productivity gain advisors are already tempted to grab.** The pilot proves the productivity. The architecture proves the compliance. That is the real pitch.
+**Horizon 1 — today.** Inside any given EAM, the quarterly review gets written in one of four ways:
+- *Hand-written from scratch* by senior advisors who don't trust AI. The dominant mode in the old guard.
+- *Silent improvisation* on naked ChatGPT by advisors who have figured out the shortcut but not the compliance framework. Fast and fragile — a compliance violation waiting for a DPO to discover it.
+- *Junior analyst or intern* drafting under senior review. Common in mid-sized boutiques.
+- *Offshore drafting services* (Asia). Cheapest, compliance nightmare, used only by firms that have accepted the trade-off.
+
+CRI's pilot wedge lands on the second and third modes — where the productivity pain is acute and the advisor is already reaching for a tool.
+
+**Horizon 2 — the next 12 to 24 months.** The real structural threat: PMS vendors (Assetmax, WealthArc, WIZE, Expersoft) adding AI commentary features natively. They already hold the cleartext data; adding a *"Generate Q review"* button is a natural extension of their product. Some are likely building this now.
+
+CRI's moat against this: the PMS vendor's AI layer faces the same compliance problem any cloud LLM faces — cleartext client data routed through a US-hosted model. The PMS doesn't magically solve the art. 47 BA and FINMA 08/2024 constraint just because it holds the data. CRI's pseudonymization architecture, by contrast, is enforced by design: tokenization happens on the advisor's workstation *before* anything leaves the perimeter. That's the forward-looking defense — CRI is deployable PMS-agnostic, and its compliance posture is not contingent on whichever PMS the firm happens to use.
+
+**Horizon 3 — 24+ months.** Market consolidation. CRI's survival depends on: expanding into a multi-use-case voice agent (already the v1.2 reframe), or being acquired by a PMS vendor as their compliance-grade AI layer, or becoming the recognised leader in compliance-first AI tooling for Swiss private wealth.
+
+CRI is not "AI entering a market without AI." CRI is **the compliant, audited path to the productivity gain advisors are already reaching for — deployable independently of whichever PMS the firm uses, and defensible even when the PMS vendors launch their own AI features.** The pilot proves the productivity. The architecture proves the compliance. The PMS-agnostic design is the 24-month hedge.
 
 ### Why now
 

@@ -69,13 +69,38 @@ Contexte :
 **Phase 2 (été 2026) :** family offices Dubai (via père pointeur passif).
 **Phase 3 (sept 2026+) :** expansion Europe + Madrid via réseau IE.
 
-## Paysage concurrentiel
+## Paysage concurrentiel — cadrage 3 horizons (refactored 2026-04-23 nuit)
 
-- **Masttro** (Zurich) : closest adjacent, all-in-one family office stack — pas add-on
-- **Unique.ch** (Zurich, 30M$ levés) : vise banques privées, pas EAMs
-- **WealthArc / Assetmax / WIZE / Expersoft** : PMS sans AI commentary avancée
-- **Apiax / Indigita** : RegTech — on ne les concurrence pas
-- **Whitespace confirmé :** « AI commentary layer, PMS-agnostic, tone-trained, Swiss-hosted » inoccupé
+### Horizon 1 — compétition directe aujourd'hui (à déplacer au pilote)
+
+Dans une firme EAM donnée, le quarterly review s'écrit aujourd'hui en 4 modes :
+- **Hand-written from scratch** (senior advisors sceptiques IA) — ~55-65% du marché, la vraie majorité
+- **Internal improvisation naked ChatGPT** (advisor qui a trouvé le shortcut sans le framework compliance) — ~15-25%, pile où CRI pitche le plus fort
+- **Junior analyst / intern** drafting sous supervision senior — ~10-15%
+- **Offshore drafting** (Asia) — ~5-10%, compliance nightmare, niche
+
+Le pilote CRI cible surtout les modes 2 et 3 — pain aigu + advisor déjà prêt à utiliser un outil.
+
+### Horizon 2 — menace structurelle 12-24 mois (la vraie bataille)
+
+**PMS vendors ajoutant AI commentary natively :** Assetmax, WealthArc, WIZE, Expersoft. Ils possèdent déjà la donnée cleartext, ajouter un bouton « Generate Q review » est une extension naturelle. Certains y travaillent probablement.
+
+**Moat CRI forward-looking :**
+- **PMS-agnostic** — l'EAM déploie CRI indépendamment de son PMS
+- **Pseudonymization enforced by design** — tokenization côté advisor workstation AVANT que quoi que ce soit quitte le périmètre. Le PMS vendor a la cleartext in-hand et la refile au LLM — même problème compliance qu'un advisor qui pastes dans ChatGPT
+- **Compliance contractuelle directe** — DPA EAM ↔ CRI, pas via le PMS qui a ses propres SLAs opaques
+
+### Horizon 3 — 24+ mois
+
+Consolidation du marché. Survie CRI via : (a) expansion multi-use-case voice agent (en cours avec v1.2), (b) acquisition par un PMS vendor comme leur compliance-grade AI layer (exit option), (c) positioning leader compliance-first AI pour private wealth Swiss (v1.3).
+
+### Acteurs connus à surveiller
+
+- **Masttro** (Zurich) : all-in-one family office stack, closest adjacent — pas add-on, pas menace pilote directe
+- **Unique.ch** (Zurich, ~USD 30M levés) : vise banques privées, pas EAMs — marché différent mais preuve que les budgets IA existent
+- **WealthArc / Assetmax / WIZE / Expersoft** (PMS) : l'Horizon 2 vrai — à documenter en profondeur dans l'audit
+- **Apiax / Indigita** (RegTech) : on ne les concurrence pas, potentiel partenariat
+- **Whitespace confirmé (phase 1) :** « AI commentary layer, PMS-agnostic, pseudonymization-first, tone-trained » inoccupé aujourd'hui. Fenêtre = 12-18 mois avant PMS-native catch-up.
 
 ## Produit / Service
 
