@@ -189,6 +189,40 @@ Référence le dossier stratégique v1.2 Part 3 « Beyond the quarterly review �
 
 ---
 
+## Discovery call — handling the two critical objections
+
+Both objections will come up in most serious discovery calls. **Have the answers ready verbatim.** Do not improvise — the answers are specific and the EAM expects specificity.
+
+### Objection 1 : "Why not just use ChatGPT?"
+
+**The shortest honest answer:**
+
+> *"ChatGPT can write text. CRI is a voice-calibrated drafting pipeline with compliance guardrails, attribution math, a discretion firewall, and measurement rigor. Your advisor could in theory do what we do by spending 40 hours on prompt engineering, learning FINMA 08/2024 implementation, and building a pseudonymization SOP. Most firms don't. The ones that try without expertise produce output their compliance officer vetoes within a week. The pilot proves we've done it right by measuring time savings against your baseline, with a refund if we miss the mark."*
+
+**Key follow-up if pushed:**
+
+> *"Also — the real risk with naked ChatGPT isn't the output quality. It's that your advisors are already tempted to paste cleartext client data into it, and most of them don't know that violates art. 47 BA. CRI removes that temptation structurally."*
+
+### Objection 2 : "Is it even compliant? Our clients fear data leaks."
+
+**The shortest honest answer:**
+
+> *"Your advisors are likely already using AI for client commentary — just not through a controlled pipeline. CRI is the audited version. Pseudonymization is enforced by the tool, not left to the advisor's discretion. The mapping file stays on the advisor's workstation — we never see it. What Anthropic receives is tokenized: Client_A, CHF bracket, canton, age bracket. Real names and account IDs never leave your perimeter. We provide a DPA, pseudonymization SOP, audit trail, and contractual framework aligned with FINMA 08/2024 and the revised FADP. If your DPO vetoes after reviewing, we refund the pilot."*
+
+**Key follow-up if pushed:**
+
+> *"The risk to your client base isn't AI adoption — it's uncontrolled AI adoption. Every firm will use AI for writing within 18 months. The ones who do it compliantly keep their clients. The ones who don't expose themselves to exactly the leak risk you're describing. CRI is designed to be the compliant path."*
+
+### The frame that unifies both objections
+
+> *"We are not competing with 'doing nothing.' We are competing with what 30-50% of your peers are already doing silently with ChatGPT. CRI is that productivity gain, under compliance controls, with measurement attached."*
+
+### Rehearsal rule
+
+Read these answers aloud at least 3 times before the first discovery call. They must flow at natural speaking pace, not sound read. If you stumble over a phrase, rewrite it in your own register — but keep every specific (art. 47 BA, FINMA 08/2024, revised FADP, 40 hours, CHF bracket / canton / age bracket, refund clause). The specifics are what a compliance-minded advisor hears.
+
+---
+
 ## Checklist avant chaque envoi
 
 Pour chaque message sortant :

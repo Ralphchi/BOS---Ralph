@@ -30,6 +30,12 @@
 
 **Commercial terms:** sold to boutique EAMs (3-30 FTE, FINMA-licensed) as a 30-day pilot at **CHF 2,400**, convertible to a full deployment at **CHF 7,900 setup + CHF 499/month**. The pilot is the sales motion; the deployment is the revenue engine.
 
+### What I'm competing with
+
+The real competition is not "doing nothing" — that is the old guard, slow and hand-written. The real competition is **what an estimated 30-50% of Swiss advisors are already doing silently: pasting cleartext client data into ChatGPT**, drafting commentary, editing, sending. This is fast and convenient — and it is a compliance violation waiting to be discovered. Art. 47 BA, FINMA 08/2024, the revised FADP all apply. Any DPO who audits will find it.
+
+CRI is not "AI entering a market without AI." CRI is **the compliant, audited path to the productivity gain advisors are already tempted to grab.** The pilot proves the productivity. The architecture proves the compliance. That is the real pitch.
+
 ### Why now
 
 Three forces align in 2026 and will not stay aligned:
@@ -144,6 +150,22 @@ Realistic year-1 economics for that 5-advisor firm:
 
 The pilot is the wedge. The subscription is the voice layer and all the writing it unlocks. That is the retention story, and it is honest: if the agent does not extend beyond quarterly reviews, CHF 499/month is overpriced. It does extend — because the voice calibration is reusable infrastructure.
 
+### Why not just use ChatGPT?
+
+The honest question every EAM advisor asks: *"Why pay for CRI when ChatGPT Plus is USD 20 / month and my advisor can type client data directly?"*
+
+| Dimension | Naked ChatGPT | CRI |
+|---|---|---|
+| Voice calibration | Guessed from "write in my firm's voice" prompt | Engineered from 2-3 firm samples, reproducible across advisors and quarters |
+| Discretion firewall | None — sensitive info bleeds into output | Section 6 structural separation + PDF stripper tool |
+| Attribution math | Plausible-sounding, often wrong | `position_weight × position_return`, hedged language unless >70% variance explained |
+| Compliance posture | Cleartext data → US cloud ≈ art. 47 BA violation risk | Pseudonymization layer, mapping local, DPA provided, FINMA-aligned |
+| Measurement | None — advisor "feels" faster | Baseline + remeasure, refund if <50% savings |
+| Year-round use cases | Re-invent prompt per use case | Voice layer reusable across 9 use cases |
+| Ongoing maintenance | Advisor's own problem | Included in subscription (model migration, guideline updates, new templates) |
+
+**What I actually sell:** not a prompt (which could be copied), but **voice-calibration expertise, compliance architecture, measurement rigor, and ongoing service** delivered through a tool. A firm that tried to DIY would need: a prompt engineer (CHF 6-12k upfront), a compliance consultant (CHF 4-10k), and an ongoing maintenance budget (CHF 2-5k / year). Total year 1: **CHF 12-27k vs CHF 13,888** for CRI full deployment — and CRI comes with proven voice expertise, a measurement protocol, and a refund clause.
+
 ### What I'm NOT doing
 
 - Not a PMS. I don't own portfolio data.
@@ -189,6 +211,14 @@ The advisor owns the log. I get read-only at remeasure. Any ambiguity resolves i
 ---
 
 ## Part 5. Compliance Posture
+
+### Compliance is the product, not a constraint
+
+In a regulated industry, the compliant provider wins. That is especially true in Swiss private banking, where discretion is not a feature — it is the whole value proposition of the market. What clients pay Swiss EAMs for is the promise that their affairs stay inside a controlled perimeter.
+
+Every EAM compliance officer knows that their advisors are under pressure to use AI. Some are using it already, without controls. The question each firm faces is not *"should we use AI?"* but *"who brings us a vetted pipeline?"*
+
+CRI is designed to be that vetted pipeline. The regulatory frame below is not a disclaimer — **it is the architecture of the product.** Pseudonymization is enforced by the tool, not left to advisor discretion. The mapping file stays on the advisor's workstation — we never see it. What Anthropic receives is tokenized. DPA, SOP, and audit rights are contractual. It is the difference between advisors improvising on the firm's liability, and advisors operating a pipeline designed for Swiss compliance.
 
 ### Regulatory frame
 

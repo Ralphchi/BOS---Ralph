@@ -22,6 +22,8 @@
 
 **Flagship unique : *Client Review Intelligence* — an AI system for Swiss wealth managers, built by Ralph Chidiac (EPFL) and his brother.**
 
+- **Positioning reframe (2026-04-23 soir) :** **compliance is the product, not a constraint.** CRI n'est pas « AI tool for quarterly reviews ». CRI est *« the compliant, audited path to the productivity gain that an estimated 30-50% of Swiss advisors are already grabbing silently with ChatGPT »*. Ce framing change la conversation : on ne vend pas de l'IA à un marché sans IA, on vend la version contrôlée à un marché qui improvise dans l'ombre.
+- **Le vrai moat (4 couches indissociables) :** voice-calibration expertise + compliance architecture + measurement rigor + ongoing service. Pas le prompt (copiable). Les 4 ensemble.
 - **Positionnement :** « An AI commentary layer that sits on top of your existing PMS. Works with Assetmax, WealthArc, WIZE, Expersoft, or custodian PDFs. **Pilot phase: pseudonymized inputs — no direct client identifiers leave your perimeter.** Full deployment: Swiss-hosted (Azure Switzerland), FINMA 08/2024-aligned governance, tone-trained on your firm's voice. »
 - **Compliance posture (révisée 2026-04-21) :** le pilote tourne sur des inputs pseudonymisés côté advisor AVANT envoi à Claude (US cloud). Les identifiants clients ne sortent jamais du périmètre de l'EAM. Migration Swiss-hosted (Azure Switzerland) = feature du full deployment, argument d'upsell naturel. Voir `Output/Client-Review-Intelligence/compliance-onepager.md`.
 - **Architecture produit (reframe 2026-04-22 nuit) :** deux couches.
