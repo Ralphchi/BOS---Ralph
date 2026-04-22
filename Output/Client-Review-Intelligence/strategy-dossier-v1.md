@@ -109,6 +109,41 @@ Three small Python CLIs complete the delivery pipeline:
 
 Test suite (19/19 passing). End-to-end validated on the fictional Marc Perrin dataset: real API call, 40.8s, 3,996 in / 2,523 out tokens, both PDFs clean.
 
+### Beyond the quarterly review: the voice as a platform
+
+The quarterly review is the **entry use case** — the biggest pain, the clearest ROI, the simplest to measure in the pilot. It is not the only use case.
+
+The architecture runs on two layers:
+
+**Voice layer** (calibrated once during week-0 setup). The firm's tone, register, signature phrases, hedging patterns. This is the fixed asset. It lives for the life of the contract.
+
+**Use case layer** (templates plugged into the voice layer). Each template is a specific type of client-facing writing, calibrated on the same voice. Once the voice is trained, adding a new use case is 30-60 minutes of template work, not a new setup.
+
+**Year-round use cases unlocked progressively after pilot:**
+
+| Use case | Frequency | Pain saved |
+|---|---|---|
+| Quarterly reviews *(use case #1, proved in pilot)* | 4× / year × 50 clients | 100 workdays / year / advisor |
+| Ad-hoc market letter (Fed move, geopolitics, etc.) | 4-8× / year firm-wide | 2-4h per event |
+| Proposal drafts for new HNWI prospects | 10-30× / year | 3-5h per proposal |
+| Meeting prep briefs (pre-meeting research + agenda) | 5-15× / week / advisor | 30 min each |
+| Response drafts (client email, concerned inquiry) | 5-10× / week | 30 min each |
+| Post-meeting follow-up letters | 3-5× / week | 20 min each |
+| Annual review (more elaborate than quarterly) | 1× / year × clients | 5-7h per client |
+| Event-driven client alerts (drawdown, drift) | ad hoc | 1-2h per event |
+| Monthly firm newsletter | 12× / year | 4-6h per newsletter |
+
+**What this means commercially.** A 5-advisor EAM signing the full deployment (CHF 7,900 + CHF 499/month) is not paying for "4 review runs per year." They are paying for a **voice-trained agent available year-round**, with use case #1 (quarterly reviews) proved during the pilot and use cases 2-9 unlocked progressively at their pace, with no new setup.
+
+Realistic year-1 economics for that 5-advisor firm:
+- Quarterly reviews: 500 workdays / year saved (5 × 100)
+- Ad-hoc, meeting prep, follow-ups: 300-500 workdays / year
+- **Total: 800-1,000 qualified workdays / year** at an advisor cost of ~CHF 1.3-1.6M
+- Subscription cost: CHF 5,988 / year
+- ROI: 220-270×
+
+The pilot is the wedge. The subscription is the voice layer and all the writing it unlocks. That is the retention story, and it is honest: if the agent does not extend beyond quarterly reviews, CHF 499/month is overpriced. It does extend — because the voice calibration is reusable infrastructure.
+
 ### What I'm NOT doing
 
 - Not a PMS. I don't own portfolio data.

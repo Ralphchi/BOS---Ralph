@@ -24,16 +24,31 @@
 
 - **Positionnement :** « An AI commentary layer that sits on top of your existing PMS. Works with Assetmax, WealthArc, WIZE, Expersoft, or custodian PDFs. **Pilot phase: pseudonymized inputs — no direct client identifiers leave your perimeter.** Full deployment: Swiss-hosted (Azure Switzerland), FINMA 08/2024-aligned governance, tone-trained on your firm's voice. »
 - **Compliance posture (révisée 2026-04-21) :** le pilote tourne sur des inputs pseudonymisés côté advisor AVANT envoi à Claude (US cloud). Les identifiants clients ne sortent jamais du périmètre de l'EAM. Migration Swiss-hosted (Azure Switzerland) = feature du full deployment, argument d'upsell naturel. Voir `Output/Client-Review-Intelligence/compliance-onepager.md`.
-- **Livrable :** à chaque review trimestrielle, l'agent ingère le portfolio snapshot + news du trimestre, et sort : performance analysis + personalized commentary dans le ton de la firme + meeting-prep brief + branded PDF ready-to-send.
-- **ROI démontrable :** 4-6h/RM/semaine récupérées, 80-140k CHF de temps qualifié libéré par an.
-- **Modules 2 (Prospect Intelligence) et 3 (Compliance Prep) :** roadmap interne. Upsell post-Module 1 signé uniquement.
+- **Architecture produit (reframe 2026-04-22 nuit) :** deux couches.
+  - **Voice layer** — calibré une fois en week-0 setup (tone, register, signature phrases de la firme). C'est l'asset pérenne et le moat. Il dure toute la vie du contrat.
+  - **Use case layer** — templates plugés sur le voice layer. Chaque template = un type de communication écrite client-facing. 30-60 min de setup par nouveau use case, pas de nouvelle calibration.
+- **Entry use case (livré dans le pilote et le premier mois du full deployment) :** quarterly client review. L'agent ingère portfolio snapshot + market context + client profile + 2 commentaires passés de la firme, et sort le package 6 sections (executive summary, performance review avec attribution math, market themes, outlook, meeting agenda, advisor-only talking points) dans la voix de la firme. 3-4h → 15 min par review.
+- **Year-round use cases débloqués progressivement post-pilote (mois 2+) :**
+  1. Ad-hoc market letters (Fed move, géopolitique, etc.)
+  2. Proposal drafts pour prospects HNWI
+  3. Meeting prep briefs (pre-meeting research + agenda)
+  4. Response drafts (email client inquiet, question spécifique)
+  5. Post-meeting follow-up letters
+  6. Annual reviews (plus élaborés que quarterly)
+  7. Event-driven client alerts (drawdown, drift d'allocation)
+  8. Monthly firm newsletter
+- **ROI démontrable (recalculé avec year-round scope) :**
+  - Quarterly reviews : 100 workdays/year/advisor libérés (ROI pilote confirmé)
+  - Autres use cases (ad-hoc + meeting prep + follow-ups + proposals) : +60-100 workdays/year/advisor additionnels
+  - **Firme 5 advisors : 800-1 000 qualified workdays/year libérés ≈ CHF 1.3-1.6M de temps qualifié vs CHF 5 988 de subscription/an → ROI 220-270×**
+- **Modules 2 (Prospect Intelligence standalone) et 3 (Compliance Prep) :** roadmap externe, distincts du voice layer CRI. Upsell post-3-clients signés uniquement.
 
 ### Formats
 
 | Format | Prix | Scope |
 |---|---|---|
-| **Pilot 30 jours** | **CHF 2 400** | 1 RM, 20 clients test, démo live, crédité à 100% si conversion |
-| **Full Deployment** | **CHF 7 900 setup + CHF 499/mois** | Toute la firme, intégration PMS, formation, support |
+| **Pilot 30 jours** | **CHF 2 400** | 1 advisor, 20 clients test pseudonymisés, quarterly review use case uniquement, crédité à 100% si conversion |
+| **Full Deployment** | **CHF 7 900 setup + CHF 499/mois** | Voice layer calibré pour toute la firme + use case #1 (quarterly reviews) + déblocage progressif des 8 use cases year-round (ad-hoc letters, proposals, meeting prep, follow-ups, etc.) au rythme de l'EAM |
 
 **Garantie :** remboursement intégral si économie de temps <50% sur le scope mesuré. Protocole de mesure documenté et annexé au contrat (baseline self-loggué par l'advisor en semaine 0, remeasure en semaine 4). Voir `Output/Client-Review-Intelligence/pilot-measurement-protocol.md`.
 

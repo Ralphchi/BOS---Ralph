@@ -266,3 +266,42 @@
   9. EMC Gestion de Fortune (Geneva) → Julien Blaudszun (4th generation, Citywire Top 50)
 - **Candidat à envisager en premier message :** NFG Partners / Yohan Palleau — founded 2023, Citywire U30 Top Talent, HEC Lausanne + U Geneva = génération/écosystème très proche de Ralph EPFL. Affinité maximale = meilleure chance de réponse même en cold.
 - **Charge restante Ralph pour validation finale :** ~30 min au lieu de 90 min estimés initialement (BOS a fait le gros du work). Check URL LinkedIn + FTE actuel + search concurrent-IA par firm.
+
+## 2026-04-22 (fin de session) — Système d'outreach + scoreboard daily
+- **Décision stratégique Ralph :** différer Patrick Bautron (seule warm card en Suisse) jusqu'à avoir 1 réponse positive ou 1 meeting en cours côté cold outreach. Logique Hormozi : warm = closing move, pas opening. 5e course correction d'instinct consécutive, toujours aligné.
+- **Livrés dans cette session finale :**
+  - **Wave 2 messages** (prio A 4-6) — Darko Vesligaj (Elypse, hook Lausanne local + Julius Baer branch builder), Dr Bolko Hohaus (HCP, hook technique PhD + SICTIC + Lombard Odier tech team), Julien Blaudszun (EMC, hook banking law + 4e gen). Chaque cible a un register de pitch radicalement différent (peer/formel/founder/local-builder/technique/legal) — 6 hypothèses testées en parallèle.
+  - **`outreach-scoreboard.md`** — page d'accueil daily pour Ralph, ritual matin 90s, cadence hebdo, 3 métriques seuils, règles d'engagement émotionnelles.
+  - **`tools/outreach_status.py`** — CLI dashboard qui lit la tracking table markdown comme source unique de vérité, calcule funnel stats, flag les D+3/D+7/D+14 dus et en retard, imprime un écran complet en une commande. Testé fonctionnel.
+- **État final fichiers Output/Client-Review-Intelligence/ :** 13 fichiers markdown + 2 PDFs + 5 Python tools. Stack complète phase 1 armée. Aucune action BOS-needed restante avant lundi 28/04.
+- **Chemin critique jusqu'au 30/06 (P1 = 1 pilote signé) :**
+  - 25/04 eye-check 6 profils LinkedIn
+  - 26/04 tournage vidéo solo
+  - 27/04 upload YouTube Unlisted
+  - 28/04 wave 1 (3 messages)
+  - 29/04-04/05 ritual matin + réponses
+  - 05/05 wave 2 (3 messages) selon diagnostic
+  - 12/05-09/06 itérations, élargissement aux prio B, activation Patrick après 1er signal positif
+  - 15-30/06 closing premier pilote
+- **Enseignement BOS (session) :** quand le brand architecture bouge (frère parti, ami différé, Patrick différé), ne pas dramatiser chaque changement. Re-cadrer immédiatement comme cohérent avec un pattern validé (Hormozi/Yomi solo founder), ajuster 3-4 lignes concrètes du plan, et surtout ne jamais pousser l'entrepreneur à rétablir l'état initial. Son instinct sur ses relations personnelles est toujours meilleur que mes modèles généraux.
+- **État émotionnel Ralph fin de session :** calme, factuel, engagé. Zéro signal d'épuisement ou de doute. A choisi lui-même la clôture propre (option O). Prochain check-in = quand il revient naturellement.
+
+## 2026-04-22 (nuit) — Reframe structurel : CRI n'est pas un quarterly review tool, c'est un firm voice agent
+- **Question critique soulevée par Ralph :** « sachant que notre produit c'est un quarterly client review, donc un produit qui va seulement être utilisé 4× par an, ou en continu ? Parce que si c'est seulement 4× par an, bah c'est pas très utile. »
+- **Diagnostic BOS :** trou dans le positionnement commercial, pas dans le produit.
+  - CHF 499/mois × 12 = CHF 5 988/an pour 4 usages = CHF 1 497 par usage → difficile à justifier
+  - Rétention faible (rien ne rappelle la valeur entre quarters → churn dès mois 3)
+  - Pas une habitude → désinstallation mentale entre quarters
+  - Cap sur le ROI narratif
+- **Reframe stratégique majeur (validé Ralph, committé artefacts) :** CRI = **voice layer** calibré une fois en week-0 (asset pérenne, le moat) + **use case layer** (templates plugés sur le voice layer, 30-60 min pour ajouter un nouveau use case, pas de nouvelle calibration).
+  - **Quarterly review = use case #1** (le wedge pilote : le plus douloureux, le plus mesurable, la vente la plus propre)
+  - **8 autres use cases year-round** débloqués progressivement post-pilote : ad-hoc market letters, proposal drafts, meeting prep briefs, response drafts, follow-up letters, annual reviews, event-driven alerts, monthly firm newsletter
+  - **ROI recalculé firme 5 advisors :** 800-1 000 qualified workdays/year (vs 500 sur quarterly seul) → CHF 1.3-1.6M de temps libéré vs CHF 5 988 subscription = **ROI 220-270×**
+- **Artefacts mis à jour :**
+  - `strategy-dossier-v1.md` → nouvelle sous-section Part 3 « Beyond the quarterly review: the voice as a platform » (tableau 9 use cases, architecture 2 couches, ROI recalculé firme-échelle)
+  - `outreach-pack-en.md` → nouvelle section « Discovery call — reframe from quarterly review to firm voice agent » (la question pivot minute 3-4, pourquoi ça marche pas en cold mais oui en call, règle d'or contre la récitation des 9 use cases comme liste supermarché)
+  - `Core/Business.md` → section Offre réécrite (architecture 2 couches, year-round use cases listés, ROI recalculé, Full Deployment scope clarifié)
+  - PDF re-rendered → strategy-dossier-v1.pdf **v1.2**
+- **Principe préservé : le cold outreach reste focalisé sur le quarterly review** (wedge mesurable, pas d'over-promise). Le year-round scope s'invoque UNIQUEMENT en discovery call, en réponse au pain déclaré par l'advisor, en citant 2-3 use cases pertinents (pas les 9 en liste).
+- **Enseignement stratégique (course correction Ralph #6 d'affilée) :** quand l'entrepreneur soulève une question commerciale basique (« est-ce vraiment utile 4× par an ? »), c'est souvent un signal qu'une couche stratégique manque. Ne pas dire « tu as tort, ton produit va bien ». Prendre la question au sérieux, la déconstruire, et re-cadrer le produit jusqu'à ce que la question disparaisse. Ici le reframe a transformé CRI d'un outil 4×/an en un firm voice agent year-round — déblocage commercial majeur qui n'aurait pas émergé sans le pushback.
+- **Course corrections Ralph validées cumulées :** 1) no site web, 2) no CRI experience LinkedIn, 3) no Skills section, 4) no over-promise outreach, 5) clarté pédagogique Part 1 dossier (via père), 6) reframe voice layer / year-round. Pattern systématique : à chaque pushback, ne pas défendre la reco initiale, creuser la question, et restructurer. L'instinct marché de Ralph est à écouter comme un signal premium.

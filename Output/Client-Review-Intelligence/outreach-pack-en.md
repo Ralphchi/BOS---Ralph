@@ -141,6 +141,54 @@ Ralph
 
 ---
 
+## Discovery call — reframe from quarterly review to firm voice agent
+
+Dans le cold outreach, le pitch reste ciblé sur le quarterly review (le pain le plus clair et mesurable). Dans le discovery call, tu ouvres sur le vrai scope : **agent IA vocal utilisé year-round**. C'est là que tu justifies CHF 7 900 + 499/mois et que tu crées la retention story.
+
+### Structure d'ouverture (premières 5 minutes)
+
+1. **Tu commences sur le quarterly review** — c'est leur problème déclenché, leur raison d'avoir pris le call.
+2. **À la minute 3-4, tu poses la question de reframe :**
+
+> *« Today, how many hours a week do your advisors spend on client-facing writing OTHER than quarterly reviews ? Proposals for new prospects, meeting prep briefs, follow-up letters, ad-hoc market commentary when something moves ? »*
+
+3. La plupart vont répondre 5-10h/semaine. Tu enchaînes calmement :
+
+> *« Right. So here's what's interesting. Once we calibrate the agent on your firm's voice for the quarterly review pilot, that same calibration powers all of those use cases too. We roll them out in the months after deployment — proposals, meeting prep, follow-ups, ad-hoc letters. The pilot proves the agent on the pain you feel every quarter. The subscription unlocks the rest. »*
+
+### Pourquoi ça marche en discovery call (et pas en cold message)
+
+- **En cold message :** promettre year-round sans le prouver = over-promise (risque intégrité, signal salesy). Le cold reste focalisé sur le quarterly review — une douleur, une démo, un chiffre.
+- **En discovery call :** tu as 30 minutes et une conversation. Tu peux poser la question, écouter la réponse, et leur montrer que tu as déjà vu le pattern avant de proposer. Consultatif, pas commercial.
+
+### Use cases year-round à citer si l'advisor demande « lesquels spécifiquement ? »
+
+Référence le dossier stratégique v1.2 Part 3 « Beyond the quarterly review ». Les 9 use cases :
+
+1. Quarterly reviews *(use case #1, proved in pilot)*
+2. Ad-hoc market letters (Fed move, geopolitics)
+3. Proposal drafts for new HNWI prospects
+4. Meeting prep briefs (pre-meeting research + agenda)
+5. Response drafts (client email, concerned inquiry)
+6. Post-meeting follow-up letters
+7. Annual review (more elaborate than quarterly)
+8. Event-driven client alerts (drawdown, drift)
+9. Monthly firm newsletter
+
+### ROI narratif pour une firme de 5 advisors
+
+- Quarterly reviews : 500 workdays / year saved (5 × 100)
+- Ad-hoc + meeting prep + follow-ups : 300-500 workdays / year
+- Total : **800-1 000 qualified workdays / year ≈ CHF 1.3-1.6M de temps libéré**
+- Subscription : CHF 5 988 / year
+- **ROI : 220-270×**
+
+### Règle d'or
+
+**Ne JAMAIS réciter les 9 use cases comme une liste de supermarché.** Tu les invoques en réponse à leur propre pain point, en citant les 2-3 qui matchent leur réalité. Si l'advisor dit « on passe des heures sur les proposals », tu réponds « yes — use case #3 du post-pilot, on le déploie au mois 2 après la signature ». Précis, calibré, jamais générique.
+
+---
+
 ## Checklist avant chaque envoi
 
 Pour chaque message sortant :
