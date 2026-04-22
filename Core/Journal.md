@@ -153,3 +153,21 @@
   - ⏳ Photo (backlog)
 - **J+1 = record historique personnel de Ralph.** 7 actions terminées en une journée (décision direction, stratégie brand, master prompt, hardening v1.1, run validation Project, LinkedIn, domaines + YouTube). Premier projet Ralph qui AVANCE au lieu de s'éteindre.
 - **Prochain jalon concret :** vendredi 24 avril, tournage vidéo avec frère. C'est ce qui va transformer le pack en asset vendable dans un email.
+
+## 2026-04-22 — Pipeline EAMs + outreach pack livrés
+- **Actions #6 et #8 traitées en parallèle BOS** à la demande explicite de Ralph ce matin.
+- **Action #6 (pipeline EAMs) — structure prête, Ralph remplit :**
+  - Fichier : `Output/Client-Review-Intelligence/eam-pipeline.md`
+  - Méthodologie complète : sources (FINMA register, VSV/ASG directory, custodian desks, LinkedIn), critères de qualification stricts, priorisation A/B/C, template de 30 slots, tracking obligatoire (dates, channels, responses, meeting outcomes), targets de conversion calibrés marché Swiss EAM
+  - Pré-seeds : 10 noms d'EAMs romands connus de BOS (Forum Finance, 1875 Finance, Heritage, Pleion, etc.) — **à vérifier contre FINMA register** avant outreach (connaissance générale peut être obsolète)
+  - Reste pour Ralph : 15-20 firms de son réseau direct (prio A, ~45 min) + 15 firms via FINMA filter GE+VD (prio B/C, ~90 min). Deadline 27 avril.
+- **Action #8 (outreach pack EN) — terminée :**
+  - Fichier : `Output/Client-Review-Intelligence/outreach-pack-en.md`
+  - 3 modèles : LinkedIn warm (mutual connection), LinkedIn cold (no mutual), email cold
+  - Séquence follow-ups D+3 (nudge léger) / D+7 (valeur ajoutée = partage compliance one-pager) / D+14 (close respectueusement)
+  - Checklist pré-envoi, règles de fréquence (max 2-3 LinkedIn/jour, 5 emails/jour, limites plateformes), timing optimal (mar/mer/jeu 9-11h ou 14-16h CET), buzzwords bannis
+  - Note culturelle Swiss EAM : conversion réaliste 5-15% warms, 3-8% cold ; sales cycle 6-12 mois ; vraie conversion entre 3e et 6e mois de relation
+- **Ton compliant avec le principe stage-appropriate understatement :**
+  - LinkedIn (warm et cold) : credentials-led (`EPFL Communication Systems, incoming IE Madrid MSc FinTech`), tease du produit sans le vendre (`With my brother, I'm building an AI review layer for Swiss EAMs`), CTA doux (`would love to connect`)
+  - Email cold : plus explicite sur la valeur (ROI chiffré, pilot terms, money-back) parce que l'email n'a pas le profil LinkedIn en support visuel — mais maintient le register professionnel, zéro hype, zéro buzzword
+- **Next step côté Ralph :** remplir le pipeline avec son réseau direct + FINMA register. Puis coller ici les 5 premiers profils prio A → BOS personnalise chaque message individuellement au moment d'envoyer (semaine du 28 avril).
