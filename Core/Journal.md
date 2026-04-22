@@ -171,3 +171,20 @@
   - LinkedIn (warm et cold) : credentials-led (`EPFL Communication Systems, incoming IE Madrid MSc FinTech`), tease du produit sans le vendre (`With my brother, I'm building an AI review layer for Swiss EAMs`), CTA doux (`would love to connect`)
   - Email cold : plus explicite sur la valeur (ROI chiffré, pilot terms, money-back) parce que l'email n'a pas le profil LinkedIn en support visuel — mais maintient le register professionnel, zéro hype, zéro buzzword
 - **Next step côté Ralph :** remplir le pipeline avec son réseau direct + FINMA register. Puis coller ici les 5 premiers profils prio A → BOS personnalise chaque message individuellement au moment d'envoyer (semaine du 28 avril).
+
+## 2026-04-22 (après-midi, pushback intégrité Ralph) — Outreach v1.1 + décision build tooling
+- **Pushback Ralph sur l'outreach v1.0 (important) :** la phrase `What we built: an AI layer that takes [...] and produces the quarterly review package in your firm's exact tone` sur-promet un produit universel. Réalité : master prompt adaptable + tone-training bespoke par firme + aucune automation. Concern intégrité + concern credibility si un prospect demande « envoie-moi le système pour que je teste » dans les jours qui viennent.
+- **BOS valide entièrement.** Ralph a raison. La v1.0 positionnait comme un produit SaaS ; la réalité = bespoke AI commentary service. Différent, et plus crédible à ce stade.
+- **Actions prises :**
+  1. **Outreach v1.1 rédigé** : `What we built` → `How it works: during a week-0 setup, we calibrate an AI review agent on your firm's voice...` ; `running a 30-day pilot` → `opening a Q2 pilot cohort` ; `AI review layer` → `AI review agent, voice-trained per firm`. Tous les modèles (LinkedIn warm, cold, email) alignés. Chiffres ROI conservés (100 workdays/an, 3-4h → 15 min) car factuels.
+  2. **Build prompt pour les 3 mini-tools écrit** dans `Output/Client-Review-Intelligence/tools/BUILD_PROMPT.md`. Ralph va l'ouvrir dans une session Claude Code séparée pour builder en parallèle ce week-end.
+- **Les 3 mini-tools :**
+  - Pseudonymization CLI (Python) — forward (avant Claude) + reverse (après) avec local mapping JSON
+  - Batch runner — Python + Anthropic SDK, asyncio parallèle, progress bar, metadata logging
+  - MD → PDF generator — weasyprint, A4 premium register (Garamond), **strippe automatiquement Section 6 TALKING POINTS du PDF client + sort une version advisor-only séparée**
+- **Pourquoi c'est stratégique :**
+  - Clôt le gap intégrité (on annonce ce qu'on a, on a plus que le minimum dans 1 semaine)
+  - Équipe Ralph pour screen-share pendant sales calls (« look, on a la pipeline »)
+  - Prépare la delivery du 1er pilote (batch runner divise le temps de run par 10 sur 20 clients)
+  - Tout local + Anthropic API = compliant art. 47 BA + FINMA 08/2024 (identifiants client ne quittent pas le poste de l'advisor)
+- **Enseignement stratégique à loguer :** Ralph a un 4ème instinct correct d'affilée (après no-site, no-CRI-experience, no-Skills, maintenant no-over-promise dans outreach). **Le pattern des course corrections Ralph est plus fiable que les recos BOS par défaut sur le positioning.** À respecter systématiquement en Phase 1 — écouter au premier pushback, ne pas chercher à défendre la reco initiale.

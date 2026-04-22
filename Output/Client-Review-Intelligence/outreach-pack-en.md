@@ -2,7 +2,11 @@
 
 **Usage :** 3 modèles de messages pour prospecter les EAMs suisses. Tous en EN (positioning Ralph phase 1). Ton : understated, credentials-led, pas salesy.
 
-**Version :** 1.0 (2026-04-22).
+**Version :** 1.1 (2026-04-22) — rewrite intégrité. Ralph a pointé que la v1.0 sur-promettait (`What we built: an AI layer that...` suggérait un produit fini universel, alors que la réalité = master prompt adaptable + tone-training bespoke par firme). Tous les modèles sont reformulés pour refléter la nature bespoke week-0 setup, sans affaiblir le pitch.
+
+**Changelog :**
+- v1.1 (2026-04-22 après-midi) : `What we built` → `How it works` ; `running a pilot` → `opening a pilot cohort` ; `AI review layer` → `AI review agent, voice-trained per firm`. Signal bespoke explicite sans affaiblir les chiffres ROI.
+- v1.0 (2026-04-22 matin) : version initiale.
 
 ---
 
@@ -25,14 +29,14 @@
 **Limite : 300 caractères pour free tier. Viser 270-290.**
 
 ```
-Hi [First name] — Ralph Chidiac, EPFL Communication Systems, incoming IE Madrid MSc FinTech. [Mutual contact first name] suggested I reach out. With my brother, I'm building an AI review layer for Swiss EAMs — compresses quarterly client commentary to 15 minutes in the firm's voice. Would love to connect.
+Hi [First name] — Ralph Chidiac, EPFL Communication Systems, incoming IE Madrid MSc FinTech. [Mutual contact first name] suggested I reach out. With my brother, I'm building an AI review agent for Swiss EAMs — voice-trained per firm, cuts quarterly commentary prep to ~15 minutes per review. Would love to connect.
 ```
 
 ### Variantes à tester
 
 **Variante A2 (plus sec) :**
 ```
-Hi [First name] — Ralph Chidiac, EPFL Communication Systems, incoming IE Madrid MSc FinTech. We have [Mutual contact] in common. With my brother, I've built an AI quarterly review tool for Swiss EAMs — running pilots in Q2. Happy to share more if it's relevant.
+Hi [First name] — Ralph Chidiac, EPFL Communication Systems, incoming IE Madrid MSc FinTech. We have [Mutual contact] in common. With my brother, I'm building an AI quarterly review agent for Swiss EAMs — voice-trained per firm. Opening a Q2 pilot cohort. Happy to share more if it's relevant.
 ```
 
 ---
@@ -42,7 +46,7 @@ Hi [First name] — Ralph Chidiac, EPFL Communication Systems, incoming IE Madri
 **Usage :** pas de contact commun mais target qualifié (boutique EAM Geneva/Lausanne 3-30 FTE). Moins probable de convertir mais élargit le pipeline.
 
 ```
-Hi [First name] — Ralph Chidiac, EPFL Communication Systems, incoming IE Madrid MSc FinTech. With my brother, I'm building an AI review layer for Swiss EAMs. Your firm looks like exactly the type of Geneva boutique we're piloting with this quarter. Would love to connect and share the demo if it's useful.
+Hi [First name] — Ralph Chidiac, EPFL Communication Systems, incoming IE Madrid MSc FinTech. With my brother, I'm building an AI review agent for Swiss EAMs — voice-trained per firm. Your boutique looks like exactly the type we'd want in our Q2 pilot cohort. Would love to connect and share the demo if it's useful.
 ```
 
 **Note :** le cold LinkedIn convertit 3x moins que le warm. Privilégier les warms chaque fois que possible. Le cold sert à élargir le funnel quand les warms sont épuisés.
@@ -75,13 +79,13 @@ Hi [First name] — Ralph Chidiac, EPFL Communication Systems, incoming IE Madri
 ```
 Hi [First name],
 
-I'm Ralph Chidiac, final-year Communication Systems undergraduate at EPFL, heading to IE Business School in Madrid for a MSc FinTech this September. With my brother, I'm running a 30-day pilot this quarter for three Swiss EAMs.
+I'm Ralph Chidiac, final-year Communication Systems undergraduate at EPFL, heading to IE Business School in Madrid for a MSc FinTech this September. With my brother, I'm opening a Q2 pilot cohort — three Swiss EAMs, 30 days each.
 
-What we built: an AI layer that takes a portfolio snapshot, the quarter's market context, and two of your past commentaries, and produces the quarterly review package in your firm's exact tone — executive summary, performance review with proper attribution math, market themes tied to the client's actual holdings, meeting agenda, and advisor-only talking points the client never sees. It compresses 3-4 hours of prep per review down to 15 minutes. For a 50-client book, that's up to 100 workdays a year recovered per advisor.
+How it works: during a week-0 setup, we calibrate an AI review agent on your firm's voice using two of your past commentaries. The agent then ingests a portfolio snapshot and quarterly market context for each of your clients, and produces the review package — executive summary, performance review with attribution math, market themes tied to actual holdings, meeting agenda, and advisor-only talking points the client never sees. Time per review goes from 3-4 hours to ~15 minutes. For a 50-client book, that's up to 100 workdays a year recovered per advisor.
 
 Pilot terms: CHF 2,400 for 30 days. Pseudonymized inputs — no direct client identifiers leave your perimeter. FINMA 08/2024-aligned governance. Full refund if measured time savings don't hit 50% against your own baseline.
 
-A 90-second demo: [YouTube unlisted link]
+A 90-second demo (run on a fictional Geneva client): [YouTube unlisted link]
 15 minutes next week? [Calendly link]
 
 Best,
