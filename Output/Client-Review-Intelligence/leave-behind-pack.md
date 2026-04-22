@@ -47,8 +47,8 @@ The tone is trained on two past commentaries from your firm. The output is ready
 
 ## Compliance posture
 
-- **Pilot phase :** pseudonymized inputs. Direct client identifiers never leave your perimeter. Aligned with art. 47 BA, FINMA Circular 2023/1 (critical data), FINMA Guidance 08/2024 (AI governance), SBA Cloud Guidelines (3rd ed., 2025), revised FADP.
-- **Full deployment :** Swiss-hosted (Azure Switzerland), FINMA 08/2024-aligned governance.
+- **Pilot phase :** pseudonymized inputs. Direct client identifiers never leave your perimeter. Aligned with **FinIA Art. 69** (professional secrecy — the primary instrument for EAMs ; Art. 47 BA reaches EAMs indirectly via custodian flow-down), **FINMA Guidance 08/2024** (AI governance, directly applicable), **revised FADP** (in force 1 Sept 2023), **Swiss-US Data Privacy Framework** adequacy (since 15 Sept 2024). SBA Cloud Guidelines 3rd ed. (Nov 2025) apply indirectly via custodian flow-down.
+- **Full deployment :** same pseudonymization architecture + voice layer + EU-region inference (Google Vertex Frankfurt, AWS Bedrock Frankfurt, or Azure Sweden Central — Claude does not have a native Switzerland region today). Open-weights Swiss-hosted option on Infomaniak / Exoscale available for firms with strict Swiss-only residency requirements.
 - DPA provided. Anthropic commercial tier — no training on inputs.
 
 ## The pilot offer
@@ -110,9 +110,13 @@ Your advisor tokenizes in your own local tooling (template provided). We never r
 - Retention: up to 30 days for abuse monitoring, then deleted. Enterprise retention terms available if needed.
 - Sub-processors: AWS (compute), DPAs in place.
 
-## Post-pilot: Swiss-hosted path
+## Post-pilot: EU-region hosting path
 
-Full deployment migrates to Azure Switzerland (Claude in-region endpoints as of 2025) OR Swiss-hosted open-weights model on Infomaniak / Exoscale. At that point, pseudonymization becomes optional.
+Full deployment runs the same pseudonymization architecture with **EU-region Claude inference** (Google Vertex AI Frankfurt, AWS Bedrock Frankfurt, or Azure AI Sweden Central — the three Claude-hosting EU regions available today). **Anthropic does not operate a native Switzerland region for Claude as of the audit date (2026-04-23)** ; we do not claim Swiss-hosted Claude.
+
+For firms with strict Swiss-only data residency requirements, we offer **open-weights alternatives** (Mistral, Llama family) on Swiss infrastructure (Infomaniak, Exoscale), with a voice-calibration quality trade-off evaluated case by case. Once Claude becomes available on Azure Switzerland in the future, migration is straightforward — the pseudonymization layer remains regardless.
+
+At full deployment, pseudonymization can become optional under a Swiss-hosted open-weights configuration, or remains in place as defence-in-depth under EU-region Claude.
 
 ## Contractual instruments provided
 

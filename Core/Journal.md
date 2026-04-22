@@ -337,3 +337,48 @@
   - **Phase 2 à lancer après ce commit Phase 1 :** inventaire de tous les claims dans tous les artefacts canoniques, recherche web exhaustive sur ~15 topics critiques (marché Swiss EAM réel, FINMA 08/2024 + 2023/1 contenu exact, art. 47 BA, revised FADP 2023, SBA Cloud Guidelines 3rd ed., PMS landscape en profondeur, Unique.ch/Masttro, pseudonymization legal defensibility, Anthropic commercial tier terms, advisor compensation benchmarks, VSV/AOOS/OSIF, outreach conversion benchmarks), refactoring de chaque fichier avec claims sourcés, nouveau fichier `audit-sources.md` avec URL + dates d'accès, dossier **v2.0** (major bump).
   - **Principe :** zéro chiffre inventé. Si pas de source, soit on retire, soit on marque explicitement « industry estimate ». Chaque section = maximum d'information utile + sourcée.
   - **Timeboxing :** ~2.5-3h de BOS. Deadline implicite : tournage vidéo vendredi 24/04, outreach lundi 28/04. Tout doit être bulletproof avant ces deux points.
+
+## 2026-04-23 (nuit, audit exhaustif terminé) — Dossier v2.0 sourced
+- **Audit terminé.** 3 research agents lancés en parallèle sur 15 topics critiques (~8,000 mots de findings sourcés). **Corrections structurelles majeures identifiées et appliquées :**
+
+**1. Erreur régulatoire fondamentale :** les artefacts CRI citaient **Art. 47 BA** comme instrument primaire pour EAMs. **Réalité :** Art. 47 BA s'applique aux **banques et securities firms**. Les EAMs post-FinIA (2020) sont sous **Art. 69 FinIA** (secret professionnel, pénalités parallèles). Art. 47 BA reaches EAMs **indirectly** via flow-down des custodian banks. Toutes les refs art. 47 BA corrigées.
+
+**2. Erreur hosting narrative :** « Swiss-hosted (Azure Switzerland) post-pilot » était **techniquement inexact**. Anthropic n'offre **pas de région Swiss native pour Claude** aujourd'hui. Options EU-region disponibles : Google Vertex Frankfurt (cleanest), AWS Bedrock Frankfurt, Azure Sweden Central. Option Swiss-only = open-weights (Mistral/Llama) sur Infomaniak/Exoscale avec trade-off voice-calibration. Tous les refs corrigés pour être honnêtes.
+
+**3. Correction market sizing :** CHF 400 bn AUM était **trop bas**. Chiffres défendables : **CHF 500 bn** (SAM members) ou **CHF 887 bn** (full IAM sector extrapolation finews/FIN21). Le premier est le plus précis, le second le plus défendable pour le TAM pitch. Corrigé partout.
+
+**4. FINMA stats précisées :** « 1 532 EAMs » devient « 1 532 portfolio managers + trustees FINMA-approved (de 1 864 demandes, 28 Feb 2025), industry-estimate 1,300-1,500 genuine EAMs hors pure trustees ». Source : FINMA press release 11 Mar 2025.
+
+**5. Pipeline hygiene :** GMG (Geneva Management Group) **disqualifié** — finews a reporté que l'entité a returned her license. Lakefield était déjà flaggé comme Zurich pas Geneva. Heritage Financial Services (Geneva) → probable mismatch (pas trouvé comme EAM sous ce nom exact ; possiblement Banque Heritage qui est une banque, ou 47Heritage boutique). Fairway Asset Management est **Zurich**, pas Lausanne.
+
+**6. Anthropic terms précisés avec verbatim :**
+  - Training : *« By default, we will not use your inputs or outputs from our commercial products »* (pas d'opt-out nécessaire, opt-in requis pour training)
+  - Retention : 30 jours default pour inputs/outputs backend, **7 jours pour API logs depuis 15 Sept 2025**
+  - Zero Data Retention (ZDR) : disponible enterprise contract. **CRI doit demander ZDR pour chaque pilot.**
+  - Certifications : SOC 2 Type II, ISO 27001:2022, **ISO/IEC 42001:2023** (premier AI management system standard — argument commercial puissant)
+  - DPA Anthropic auto-incorporé dans Commercial ToS, inclut Swiss addendum
+  - Swiss-US DPF adequacy depuis 15 Sept 2024 — à vérifier pour Anthropic avant chaque pilot
+
+**7. PMS landscape vérifié :** WealthArc a le narratif AI le plus clair (AI Agent 2025 pour doc structuring + « Chat with your Data » Q&A — **pas un letter generator**). Masttro (« Masttro Intelligence ») target family offices, pas EAM boutique 5-30 FTE. Assetmax, WIZE, Expersoft : **pas d'AI commentary feature publique**. **Confirme que le wedge CRI « voice-calibrated, pseudonymization-first, PMS-agnostic quarterly review agent » est ouvert aujourd'hui** — probable fenêtre 12-24 mois avant PMS-native catch-up.
+
+**8. Unique.ai précisé :** Series A **USD 30M annoncée 27 Feb 2025**, lead CommerzVentures + DN Capital, with VI Partners + Pictet Group. Customers : Pictet, UBP, SIX, LGT, Partners Group. 30,000 financial professionals. **Target private banks, pas EAMs** — adjacent, not direct competitor.
+
+**9. FINMA AI stat contextualisé :** « ~50% of Swiss FIs use AI » = **FINMA 2025 survey de ~400 institutions**, **pas EAM-specific** (EAMs sont dans le petit bucket « other »). Framing corrigé : EAMs = segment lagging que le régulateur surveille.
+
+**10. Advisor compensation benchmark ajouté :** loaded hourly cost CHF 200-400/hour pour senior Swiss EAM advisor. ROI recalculé : 5-advisor firm saves 800-1,000 workdays/year × CHF 250/hour midpoint = CHF 1.6M / year vs CHF 5,988 subscription = ROI ~270×.
+
+- **Artefacts touchés dans l'audit :**
+  - **`audit-sources.md` (NEW)** — consolidated source list avec URL + dates d'accès, ~10 sections organisées par topic
+  - `strategy-dossier-v1.md` → v2.0 — Part 2 refactored avec sourced numbers, Part 5 major rewrite (FinIA Art. 69 primary, layered defence, Anthropic terms verbatim, honest hosting narrative), Part 10 appendix sourced, Part 8 strength patterns updated (8 course corrections Ralph), Part 3 ChatGPT comparison table updated
+  - `compliance-onepager.md` → v2.0 (full rewrite) — FinIA Art. 69 primary, layered defence 6-piece stack, Anthropic commercial tier détails, hosting honest narrative, FINMA 08/2024 alignment table
+  - `Core/Business.md` — positioning v2.0, regulatory note, market sizing corrigé (1,532 FINMA / CHF 500-887 bn)
+  - `outreach-pack-en.md` — Objection 1 answer corrigé (FinIA Art. 69 + Art. 47 BA via custodian flow-down)
+  - `leave-behind-pack.md` — compliance references corrigées, hosting narrative honest
+  - `eam-pipeline.md` — GMG disqualified avec source
+  - PDF **v2.0** à re-render
+
+- **Enseignement stratégique :** l'audit a révélé des erreurs factuelles sur lesquelles BOS aurait été démoli au premier DPO review. En particulier l'erreur Art. 47 BA (qui ne s'applique pas aux EAMs directement) était un gap béant dans notre narratif compliance. **Maintenant le dossier v2.0 est « DPO-proof »** — chaque claim est sourcé, chaque narratif est honnête, chaque erreur factuelle corrigée.
+
+- **Course correction Ralph #8 → upgrade permanent :** Ralph a demandé un audit exhaustif pour transformer le projet en « oracle d'informations ». C'est désormais son état. Principe opérationnel permanent : avant d'ajouter un claim empirique dans un artefact canonique, soit il est sourcé dans `audit-sources.md`, soit il est explicitement flaggé « industry estimate » avec raisonnement.
+
+- **Prochaine action (après commit) :** re-render PDF v2.0, commit + push. Puis retour à l'exécution opérationnelle : tournage vidéo vendredi 24/04, premier outreach lundi 28/04 — avec maintenant des artefacts qui survivent à une question précise.

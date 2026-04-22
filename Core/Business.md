@@ -24,8 +24,8 @@
 
 - **Positioning reframe (2026-04-23 soir) :** **compliance is the product, not a constraint.** CRI n'est pas « AI tool for quarterly reviews ». CRI est *« the compliant, audited path to the productivity gain that an estimated 30-50% of Swiss advisors are already grabbing silently with ChatGPT »*. Ce framing change la conversation : on ne vend pas de l'IA à un marché sans IA, on vend la version contrôlée à un marché qui improvise dans l'ombre.
 - **Le vrai moat (4 couches indissociables) :** voice-calibration expertise + compliance architecture + measurement rigor + ongoing service. Pas le prompt (copiable). Les 4 ensemble.
-- **Positionnement :** « An AI commentary layer that sits on top of your existing PMS. Works with Assetmax, WealthArc, WIZE, Expersoft, or custodian PDFs. **Pilot phase: pseudonymized inputs — no direct client identifiers leave your perimeter.** Full deployment: Swiss-hosted (Azure Switzerland), FINMA 08/2024-aligned governance, tone-trained on your firm's voice. »
-- **Compliance posture (révisée 2026-04-21) :** le pilote tourne sur des inputs pseudonymisés côté advisor AVANT envoi à Claude (US cloud). Les identifiants clients ne sortent jamais du périmètre de l'EAM. Migration Swiss-hosted (Azure Switzerland) = feature du full deployment, argument d'upsell naturel. Voir `Output/Client-Review-Intelligence/compliance-onepager.md`.
+- **Positionnement (v2.0, post-audit 2026-04-23) :** « An AI commentary layer that sits on top of your existing PMS. Works with Assetmax, WealthArc, WIZE, Expersoft, or custodian PDFs. **Pilot phase: pseudonymized inputs — no direct client identifiers leave your perimeter. EU-region inference (Frankfurt or Sweden), Anthropic commercial API with Zero Data Retention available on enterprise contract.** Full deployment: same architecture + voice layer calibrated for the firm + progressive unlock of year-round use cases. FinIA Art. 69-aligned for EAMs ; FINMA Guidance 08/2024 governance checklist complete ; Anthropic DPA with Swiss FADP addendum ; tone-trained on your firm's voice. »
+- **Compliance posture (v2.0, post-audit 2026-04-23) :** le régime principal qui s'applique aux EAMs est **FinIA Art. 69** (secret professionnel), pas Art. 47 BA directement (qui couvre les banques). Art. 47 BA reaches EAMs indirectly via flow-down des custodians. Le pilote tourne sur des inputs pseudonymisés AVANT envoi à Claude (EU-region hosting : Frankfurt ou Sweden, pas Swiss). **Anthropic n'offre pas de région Swiss native pour Claude aujourd'hui** — narratif « Swiss-hosted deployment » retiré comme techniquement inexact. Options pour firmes strict Swiss-only : open-weights sur Infomaniak/Exoscale (voice-calibration trade-off), ou attendre Claude on Azure Switzerland. Voir `Output/Client-Review-Intelligence/compliance-onepager.md` v2.0 pour le détail complet sourcé.
 - **Architecture produit (reframe 2026-04-22 nuit) :** deux couches.
   - **Voice layer** — calibré une fois en week-0 setup (tone, register, signature phrases de la firme). C'est l'asset pérenne et le moat. Il dure toute la vie du contrat.
   - **Use case layer** — templates plugés sur le voice layer. Chaque template = un type de communication écrite client-facing. 30-60 min de setup par nouveau use case, pas de nouvelle calibration.
@@ -61,7 +61,7 @@
 **Wealth managers indépendants / EAMs FINMA-licensed 3-30 FTE**, Suisse romande (Genève/Lausanne) en priorité.
 
 Contexte :
-- 1 532 EAMs licenciés FINMA (post-FinIA 2020), ~CHF 400 mds AUM
+- **1 532 portfolio managers + trustees** FINMA-approved (de 1 864 demandes, au 28 février 2025 ; source : FINMA press release 11 mars 2025). Industry-estimated **~1 300-1 500 genuine EAMs** (hors pure trustees). AUM : **~CHF 500 mds** (membres SAM/VSV/ASG) ou **~CHF 887 mds** (secteur IAM extrapolation finews/FIN21) — **pas CHF 400 mds** comme précédemment cité (correction audit 2026-04-23)
 - Pain : 4-6h/RM/semaine en commentary + reporting manuel
 - Culture achat relationnelle, sales cycle 6-12 mois
 - Vénèrent les credentials (EPFL + IE = billet d'entrée)
@@ -142,7 +142,7 @@ Done-for-you. Ralph + frère + ami backbone :
 
 - Revenue actuel : 0 CHF
 - Budget initial : 500-1 000 CHF (domaines persos CHF ~40, outils, design)
-- Stack outils cible : Claude (agents + tone-training), n8n / Make (workflows), Notion / Linear, Stripe multi-devises, Infomaniak (hébergement .ch), Swiss-hosted LLM ou Azure Switzerland (FINMA 08/2024)
+- Stack outils cible : Claude via EU-region (AWS Bedrock Frankfurt ou Google Vertex Frankfurt) — **pas de Swiss-hosted Claude aujourd'hui**, Azure Switzerland n'offre pas Claude. Open-weights sur Infomaniak/Exoscale comme option pour firmes strict Swiss-residency. Outils annexes : n8n / Make (workflows), Notion / Linear, Stripe multi-devises, Infomaniak (hébergement .ch des sites vitrines personnels).
 
 ## Équipe
 

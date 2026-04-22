@@ -42,9 +42,14 @@ CRI does not compete against a single alternative. It competes across three hori
 
 CRI's pilot wedge lands on the second and third modes — where the productivity pain is acute and the advisor is already reaching for a tool.
 
-**Horizon 2 — the next 12 to 24 months.** The real structural threat: PMS vendors (Assetmax, WealthArc, WIZE, Expersoft) adding AI commentary features natively. They already hold the cleartext data; adding a *"Generate Q review"* button is a natural extension of their product. Some are likely building this now.
+**Horizon 2 — the next 12 to 24 months.** The real structural threat: PMS vendors adding AI commentary features natively. The current state of their public AI narratives (audited April 2026):
+- **WealthArc** has the clearest AI push: in 2025 it launched an *AI Agent* that converts financial documents (account statements, capital-call notices, performance reports) into structured data, plus a *"Chat with your Data"* Q&A feature. It is **not** a quarterly-letter generator yet, but it is the vendor closest to that frontier.
+- **Masttro** markets *"Masttro Intelligence"* — natural-language Q&A on portfolio data, agentic AI for capital calls / alternatives document capture. Positioned for family offices (10,000+ users, 650+ custodian feeds), not Swiss EAM boutiques at the 5-30 FTE size CRI targets.
+- **Assetmax**, **WIZE by TeamWork**, **Expersoft** have no publicly announced AI commentary features as of the audit. Likely in roadmap, not in market.
 
-CRI's moat against this: the PMS vendor's AI layer faces the same compliance problem any cloud LLM faces — cleartext client data routed through a US-hosted model. The PMS doesn't magically solve the art. 47 BA and FINMA 08/2024 constraint just because it holds the data. CRI's pseudonymization architecture, by contrast, is enforced by design: tokenization happens on the advisor's workstation *before* anything leaves the perimeter. That's the forward-looking defense — CRI is deployable PMS-agnostic, and its compliance posture is not contingent on whichever PMS the firm happens to use.
+(Sources: WealthArc AI agent launch coverage 2025; Masttro Intelligence product pages; vendor websites, all accessed 2026-04-22. See `audit-sources.md`.)
+
+CRI's moat against this horizon: the PMS vendor's AI layer faces the same Swiss compliance problem any cloud LLM faces — cleartext client data routed through a model hosted outside the Swiss perimeter. The PMS does not magically solve the FinIA art. 69 (professional secrecy, covers EAMs), nFADP cross-border transfer rules, and FINMA Guidance 08/2024 governance obligations just because it holds the data. CRI's pseudonymization architecture, by contrast, is enforced by design: tokenization happens on the advisor's workstation *before* anything leaves the perimeter. That is the forward-looking defense — CRI is deployable PMS-agnostic, and its compliance posture is not contingent on whichever PMS the firm happens to use.
 
 **Horizon 3 — 24+ months.** Market consolidation. CRI's survival depends on: expanding into a multi-use-case voice agent (already the v1.2 reframe), or being acquired by a PMS vendor as their compliance-grade AI layer, or becoming the recognised leader in compliance-first AI tooling for Swiss private wealth.
 
@@ -54,9 +59,9 @@ CRI is not "AI entering a market without AI." CRI is **the compliant, audited pa
 
 Three forces align in 2026 and will not stay aligned:
 
-1. **AI adoption has crossed the threshold.** 50% of Swiss financial institutions already use AI in production (FINMA 2025). Unique.ch raised USD 30M targeting private banks — the budgets exist and the objection "AI is a gimmick" is dead.
-2. **The whitespace is unoccupied.** Masttro, WealthArc, Assetmax, WIZE, Expersoft own the PMS layer. Apiax/Indigita own RegTech. Nobody owns *AI commentary layer, PMS-agnostic, tone-trained, Swiss-hosted*. That position is mine to take if I move first.
-3. **FINMA Guidance 08/2024 forces EAMs to think about AI governance.** The ones who already use ChatGPT on real client data are exposed. A compliant offering with a clean data posture solves a problem they now have.
+1. **AI adoption has crossed the threshold.** FINMA's own April 2025 survey of ~400 licensed institutions reports roughly **50% already use AI or have applications in development**, and another ~25% plan to within three years. Of the 187 institutions actively using AI, 91% also use generative AI. (FINMA press release, 24 Apr 2025.) Swiss EAMs are under-represented in that survey — they sit in the small "other institutions" bucket — which means the objection *"AI is a gimmick"* is dead for banks, and EAMs know they are the lagging segment the regulator is watching. Unique.ai closed a **USD 30 M Series A in February 2025** (CommerzVentures + DN Capital, with VI Partners and Pictet Group) serving Pictet, UBP, SIX, LGT, Partners Group — proof the budgets exist in Swiss wealth.
+2. **The whitespace is unoccupied at the Swiss EAM boutique tier.** WealthArc and Masttro have launched AI features but on data Q&A and document structuring, not quarterly-letter drafting. Assetmax, WIZE, Expersoft have no publicly announced AI commentary yet. Apiax and Indigita are RegTech, not competitors. Nobody, as of this writing, ships a production *"voice-calibrated, pseudonymization-first, PMS-agnostic quarterly review agent"* for boutique Swiss EAMs. That position is mine to take before the PMS vendors close the gap in 12-24 months.
+3. **FINMA Guidance 08/2024 (18 Dec 2024) directly applies to EAMs.** The guidance's four pillars — governance, data quality, testing/explainability/bias, documentation — are addressed to all FINMA-supervised institutions including portfolio managers and trustees under FinIA. Every EAM compliance officer now has a checklist they did not have 14 months ago. The ones whose advisors are already improvising on ChatGPT are exposed against that checklist. A vendor that arrives with a governance-ready architecture (DPIA-friendly, DPA-ready, pseudonymization-enforced, vendor contract aligned to the Guidance's requirements) solves an audit problem they now have.
 
 ### Why me
 
@@ -70,29 +75,48 @@ If I ship one real pilot with a Geneva EAM by end of June 2026, publish the case
 
 ## Part 2. The Market
 
-### Swiss EAM landscape
+### Swiss EAM landscape (sourced)
 
-| Metric | Value |
-|---|---|
-| FINMA-licensed EAMs (post-FinIA) | **1,532** |
-| Estimated AUM | **~CHF 400 billion** |
-| Target segment (3-30 FTE, French-speaking CH) | ~200-300 firms |
-| Typical sales cycle | 6-12 months |
-| Average client review prep time per advisor/week | 4-6 hours |
-| Workdays lost per advisor/year to manual commentary | **~100** |
+| Metric | Value | Source |
+|---|---|---|
+| FINMA-approved portfolio managers + trustees (Art. 17 FinIA, 28 Feb 2025) | **1,532** (of 1,864 applications; 131 withdrawn; 94 under review) | FINMA press release 11 Mar 2025 |
+| Of which, genuine EAMs (excluding pure trustees) — industry estimate | **~1,300-1,500** | finews/Aquila sector study |
+| Total AUM (SAM members only) | **~CHF 500 bn** | SAM / VSV / ASG |
+| Total AUM (full Swiss IAM sector, extrapolated) | **~CHF 887 bn** | FIN21/finews |
+| Share of Swiss wealth management market (IAM sector) | ~15% | FIN21/finews |
+| >80% of IAM firms employ | **≤10 people** | FIN21/finews |
+| Two-thirds of firms AUM range | **CHF 100 m – CHF 2 bn** | FIN21/finews |
+| Two-thirds of managing directors | **>50 years old** (succession indicator) | FIN21/finews |
+| FINMA-licensed Supervisory Organisations | **5 SOs** (AOOS, OSIF, SO-FIT, OSFIN, FINcontrol) | FINMA |
+| SAM / VSV / ASG members | **>2,500** | VSV/ASG |
+| Typical Swiss wealth-vendor sales cycle | **6-12 months** | industry estimate, directionally supported by B2B financial-services avg 60-120 days |
+| Advisor book size (industry: US/global benchmark) | **50-100 "real" client relationships** (Kitces) | Kitces Research |
+| Advisor time on meeting prep (US/global) | **5.3 hrs/week** (Kitces) | Kitces Research |
+| Derived time per quarterly review | **~3-4 hrs** (Kitces-derived: 5.3h prep / 3.8 quarterly meetings per week) | Derived; no Swiss-primary source |
+| Workdays/year recovered per advisor at 50-client book × 3-4h × 4 quarters ÷ 8h/day | **75-100 workdays** | Calculated |
+
+See `audit-sources.md` for URL list and access dates.
+
+### Regulatory and supervisory context
+
+Swiss EAMs post-FinIA (2020) are supervised through a two-tier structure: **FINMA licenses and retains enforcement authority**, while one of **five Supervisory Organisations (SOs)** handles ongoing compliance monitoring — AOOS (Zurich, the largest, founded by SAM/VSV), OSIF (Geneva), SO-FIT (Geneva), OSFIN (Neuchâtel), and FINcontrol Suisse (Bern, VQF-owned). This structure is the regulatory context a compliance officer lives inside every day, and it is the audit environment CRI must survive.
+
+The **Swiss Association of Wealth Managers (SAM / VSV / ASG)** is the dominant industry association. >2,500 members collectively managing ~CHF 500 bn. Relevant as a distribution channel: directory access, events, model contracts, mandatory ombudsman affiliation. Annual membership fee CHF 5,000 + VAT. Competing association worth noting: **Alliance of Swiss Wealth Managers (ASWM)**, which counts Prime Partners and other larger boutiques among its members.
 
 ### The specific pain I'm solving
 
-A Swiss EAM advisor runs a 40-60 client book. Each quarter, every client gets a personalised review — executive summary, performance attribution, market themes, forward-looking commentary, meeting agenda. Today this is written by hand, copy-pasted from prior quarters, politely adjusted. The result is generic. The process is the single largest non-billable time sink in the firm.
+A Swiss EAM advisor runs a 50-client book (Kitces-consistent benchmark for "real" advisor relationships at this tier). Each quarter, every client gets a personalised review — executive summary, performance attribution, market themes, forward-looking commentary, meeting agenda. Today this is written by hand, copy-pasted from prior quarters, politely adjusted. The result is generic. The process is the single largest non-billable time sink in the firm.
 
-CRI does not replace the advisor's judgement. It drafts the commentary in **the firm's own voice** (calibrated on 2-3 past samples), applies rigorous attribution math, isolates the advisor-only talking points from the client-facing document, and hands back a ready-to-edit markdown. The advisor reads, tweaks, sends.
+Time per quarterly review is **3 to 4 hours** — derived from Kitces Research (5.3 hrs/week on meeting prep, ~3.8 quarterly meetings/week). For a 50-client book, that is **150-200 hours every quarter, or 600-800 hours per advisor per year, or 75-100 workdays annually**. At a Swiss senior advisor loaded cost of **CHF 200-400/hour** (derived from Glassdoor/PayScale/WealthBriefing compensation data + Swiss employer loading), the year-round time cost is **CHF 120,000-320,000 per advisor**. For a 5-advisor firm, up to **CHF 1.6 million in recoverable qualified time annually**.
+
+CRI does not replace the advisor's judgement. It drafts the commentary in **the firm's own voice** (calibrated on 2-3 past samples), applies rigorous attribution math, isolates the advisor-only talking points from the client-facing document, and hands back a ready-to-edit markdown. The advisor reads, tweaks, sends. Senior judgement stays with the senior advisor; drafting labour leaves.
 
 ### Why Swiss private banking is a defensible niche
 
-- **Tone is non-negotiable.** A generic "AI commentary" tool reads instantly as cheap. CRI's voice-training step is the moat.
-- **Compliance is non-negotiable.** Art. 47 BA (banking secrecy) + FINMA Guidance 08/2024 (AI governance) mean every serious EAM has a compliance officer who will kill a careless vendor. My pseudonymization architecture turns this from blocker into sales asset.
-- **Culture is relationship-driven.** Warm intros convert at 5-15%; cold emails at 1-3%. This is slow but sticky — once inside a firm, the next three referrals come free.
-- **Competitive landscape stays niche.** US vendors won't build for 1,500 EAMs. Large Swiss PMS players won't compete with their own customers' add-ons. The window stays open.
+- **Tone is non-negotiable.** A generic "AI commentary" tool reads instantly as cheap. CRI's voice-training step is the moat — each firm's 2-3 past samples become the calibration asset that competitors cannot replicate without onboarding the same firm.
+- **Compliance is non-negotiable.** FinIA Art. 69 (professional secrecy for EAMs, parallel to Art. 47 BA for banks), FINMA Guidance 08/2024 (AI governance), the revised FADP (Sept 2023), and — flowing down from custodian banks — FINMA Circular 2023/1 + SBA Cloud Guidelines 3rd ed. (Nov 2025) collectively mean every serious EAM has a compliance officer who will kill a careless vendor. CRI's pseudonymization-at-source architecture and vendor-contract package (DPA with Swiss FADP addendum, SOP, audit rights) turn this from blocker into sales asset.
+- **Culture is relationship-driven.** Warm intros in Swiss wealth B2B convert at **40-60% response and 15-25% meeting conversion**; cold email at ~3.4% (financial services benchmark), cold LinkedIn at 26-29% acceptance with ~11% reply. Adjust down 0.7-0.8× for Swiss / DACH vs US baseline. Slow but sticky — once inside a firm, the next three referrals come free.
+- **Competitive landscape stays niche.** US vendors won't build for a 1,300-1,500-firm market. Large Swiss PMS players will launch AI features natively in 12-24 months (the Horizon 2 risk, addressed in Part 1); the CRI window is the time it takes them to get there, and CRI's PMS-agnostic + compliance-first design is the hedge against their arrival.
 
 ---
 
@@ -173,7 +197,7 @@ The honest question every EAM advisor asks: *"Why pay for CRI when ChatGPT Plus 
 | Voice calibration | Guessed from "write in my firm's voice" prompt | Engineered from 2-3 firm samples, reproducible across advisors and quarters |
 | Discretion firewall | None — sensitive info bleeds into output | Section 6 structural separation + PDF stripper tool |
 | Attribution math | Plausible-sounding, often wrong | `position_weight × position_return`, hedged language unless >70% variance explained |
-| Compliance posture | Cleartext data → US cloud ≈ art. 47 BA violation risk | Pseudonymization layer, mapping local, DPA provided, FINMA-aligned |
+| Compliance posture | Cleartext client data → US cloud = FinIA Art. 69 and nFADP cross-border transfer exposure, FINMA 08/2024 governance gaps | Pseudonymization-at-source, mapping key retained locally, Anthropic DPA with Swiss FADP addendum, ISO 42001 AI governance, ZDR available on enterprise contract |
 | Measurement | None — advisor "feels" faster | Baseline + remeasure, refund if <50% savings |
 | Year-round use cases | Re-invent prompt per use case | Voice layer reusable across 9 use cases |
 | Ongoing maintenance | Advisor's own problem | Included in subscription (model migration, guideline updates, new templates) |
@@ -234,15 +258,26 @@ Every EAM compliance officer knows that their advisors are under pressure to use
 
 CRI is designed to be that vetted pipeline. The regulatory frame below is not a disclaimer — **it is the architecture of the product.** Pseudonymization is enforced by the tool, not left to advisor discretion. The mapping file stays on the advisor's workstation — we never see it. What Anthropic receives is tokenized. DPA, SOP, and audit rights are contractual. It is the difference between advisors improvising on the firm's liability, and advisors operating a pipeline designed for Swiss compliance.
 
-### Regulatory frame
+### Regulatory frame (sourced, primary-instrument-first)
 
-| Instrument | What it says | Why it matters here |
-|---|---|---|
-| Art. 47 BA | Swiss banking secrecy | Cleartext client identifiers cannot go to US cloud without legal basis |
-| FINMA 2023/1 | Operational risks, critical data concept | Cloud AI processing of client data falls in scope |
-| FINMA Guidance 08/2024 | AI governance | EAMs must understand their outsourced AI, contractually govern it |
-| Revised FADP (2023) | Swiss data protection | Cross-border transfer restrictions, consent, minimization |
-| SBA Cloud Guidelines 3rd ed. (Nov 2025) | Cloud framework | Applicable to cloud-based processing in Swiss banking |
+An important precision first: **Art. 47 Banking Act (BA) does not directly cover EAMs**. It applies to banks and securities firms. EAMs licensed under the Financial Institutions Act (FinIA, 2020) are subject to a parallel professional-secrecy regime under **Art. 69 FinIA**, with penalties broadly similar — custodial up to three years or a monetary penalty for intentional unauthorised disclosure (CapLaw, Global Investigations Review, accessed 2026-04-22). Art. 47 BA reaches the EAM **indirectly**, through its custodian relationship: custodian banks will flow down their own Art. 47 BA and FINMA Circular 2023/1 obligations to the EAM contractually. This two-layer reality — direct FinIA Art. 69, plus indirect Art. 47 BA via custodians — is how a Swiss EAM compliance officer thinks about the framework.
+
+| Instrument | What it says | Applies to EAM | Why it matters here |
+|---|---|---|---|
+| **FinIA Art. 69** (professional secrecy for portfolio managers / trustees) | Criminalises intentional unauthorised disclosure of client data by EAM directors, employees, agents, liquidators. Custodial up to 3 years or monetary penalty. | **Directly** — primary instrument for EAMs | Any cleartext identifier leaving the EAM perimeter without legal basis is an Art. 69 exposure. |
+| **FINMA Guidance 08/2024** on governance and risk management when using AI (18 Dec 2024) | Four pillars: governance & AI inventory, data quality, testing/explainability/bias, documentation/independent review. Explicitly extends to third-party AI. | **Directly** — all FINMA-supervised institutions including FinIA-licensed EAMs | The compliance checklist every EAM must apply before deploying a vendor AI tool. CRI's documentation is designed to fit this checklist. |
+| **Revised FADP (nFADP, in force 1 Sept 2023)** | Swiss data protection law. Pseudonymized data remains personal data when re-identification is possible. Cross-border transfer requires adequacy, SCCs, or derogation. DPIA mandatory for high-risk processing (Art. 22). | **Directly** | CRI inputs, even tokenized, count as personal data from the EAM's perspective. Cross-border transfer rules apply. |
+| **Swiss-US Data Privacy Framework** (adequacy route, in force 15 Sept 2024) | Adds the US to the Swiss adequacy list for transfers to **DPF-certified** US recipients. Non-certified recipients require SCCs. | **Directly** | CRI's transfer pathway to Anthropic (US-hosted) rides on either DPF certification status — to be verified on Anthropic's trust portal — or on Swiss SCCs as a fallback. |
+| **FINMA Circular 2023/1** (Operational Risks and Resilience — Banks; in force 1 Jan 2024) | Principle-based operational-risk regime for banks. Introduces "critical data" concept (broader than the old CID). Addresses outsourcing, cloud, ICT, BCM, resilience. | **Indirectly** (banks only; reaches EAMs via custodian flow-down clauses) | When the EAM's custodian is a bank, the custodian's contractual requirements typically pass Circular 2023/1 obligations downstream. CRI's architecture must survive this flow-down. |
+| **SBA Cloud Guidelines, 3rd ed.** (4 Nov 2025) | Non-binding SBA recommendations. Data classification (bank-client data + critical data), risk-based approach, audit rights, exit strategy, foreign-lawful-access (CLOUD Act) section. **No AI-specific provisions**. | **Indirectly** (banks; EAMs via flow-down) | Custodian-driven flow-down; CRI's compliance pack addresses the same principles even for non-bank EAMs. |
+
+### Is the pseudonymization approach legally defensible?
+
+**Under nFADP:** Yes, but with nuance. Pseudonymized data where the mapping key stays with the controller **remains personal data** (Swiss and European consensus, consistent with GDPR Recital 26 and CJEU Breyer C-582/14). The CRI architecture therefore does not take the processing out of nFADP scope. It does materially reduce risk, because the recipient (Anthropic) is in a position where practical re-identification is unavailable — the CJEU's "relative approach" (SRB v EDPS, 2023) suggests such data may be effectively anonymous in the recipient's hands while remaining personal in the controller's. Swiss regulators have not explicitly adopted this doctrine but are expected to follow the European line.
+
+**Under FinIA Art. 69 / Art. 47 BA:** Banking and professional secrecy protect information that identifies or is linked to a specific client. Robust pseudonymization where the mapping key stays inside the EAM perimeter **substantially mitigates** (but does not categorically eliminate) secrecy risk. The 2019 SBA/LLAG legal opinion on bank secrecy and cloud recognises that when a cloud provider cannot practically re-identify clients, secrecy exposure is materially reduced. **No FINMA primary guidance explicitly endorses pseudonymization as a safe harbour.** We do not claim that it is one; we position it as a defensible, layered control under a broader governance regime.
+
+**The bottom line for CRI's compliance narrative:** the pseudonymization-at-source architecture is defensible, but not a magic shield. Its defensibility comes from being one layer in a stack: (a) pseudonymize at source, (b) Swiss-US DPF or SCCs, (c) DPIA (likely required under Art. 22 nFADP given AI + financial data + cross-border transfer), (d) FINMA Guidance 08/2024 governance (inventory, risk classification, vendor contract, monitoring), (e) Anthropic commercial contract (no training on inputs, ZDR option). Present this as a layered defence, not a single silver bullet. It survives a 10-minute DPO review because every layer is documented.
 
 ### The architectural answer: pseudonymization firewall
 
@@ -253,21 +288,46 @@ Advisor workstation  →  Local pseudonymization  →  Claude API  →  Local re
      (full data)            (by the advisor)          (tokens)           (by the advisor)
 ```
 
-Fields tokenized: name, spouse, children, residence (to canton level), portfolio size (to bracket), custody account IDs, dates of birth (to age bracket), AHV/Steuer-Nr (never transmitted at all). The advisor owns the mapping file. I never receive pseudonymization keys.
+Fields tokenized: name, spouse, children, residence (to canton level), portfolio size (to bracket), custody account IDs, dates of birth (to age bracket), AHV / Steuer-Nr / any tax identifier (never transmitted at all). The advisor owns the mapping file. CRI never receives pseudonymization keys.
 
-### Post-pilot Swiss-hosted path
+### Anthropic (the downstream processor) — verified terms
 
-Full deployment migrates to either:
-- **Azure Switzerland** with Claude in-region endpoints (available as of 2025), or
-- **Swiss-hosted open-weights** on Infomaniak / Exoscale (performance trade-off, case-by-case).
+The commercial API tier governs CRI's use of Claude:
 
-At deployment, pseudonymization becomes optional. This is the natural upsell narrative: pilot proves value under pseudonymization → deployment removes the friction.
+- **Training:** verbatim Anthropic Privacy Center, *"By default, we will not use your inputs or outputs from our commercial products (e.g. Claude for Work, Anthropic API, Claude Gov, etc.) to train our models."* Opt-in required for training use.
+- **Retention:** default 30 days for inputs/outputs at the backend. **API logs specifically reduced to 7 days since 15 September 2025** (per public reporting). Exceptions: services with longer customer-controlled retention (Files API), enterprise ZDR contracts, Usage Policy enforcement (up to 2 years for inputs, up to 7 years for trust-and-safety classifier scores).
+- **Zero Data Retention (ZDR):** available on enterprise contract and security addendum for qualifying customers. Under ZDR, customer data is not stored at rest after the API response is returned. **For Swiss EAM handling client data, ZDR is the version to contractually require.**
+- **DPA:** Anthropic's Data Processing Addendum incorporates EU Standard Contractual Clauses (Modules 2 and 3) plus UK and **Switzerland addenda**. Auto-incorporated in Commercial Terms of Service — signing ToS = signing DPA. Customer is controller; Anthropic is processor; Anthropic commits not to sell or share personal data.
+- **Encryption:** AES-256 at rest, TLS 1.2+ in transit. MFA and least-privilege access controls.
+- **Certifications:** SOC 2 Type I and Type II, ISO 27001:2022, **ISO/IEC 42001:2023** (AI management systems — the first dedicated AI-governance standard), HIPAA-ready (BAA on qualifying contracts). Reports obtainable via Trust Portal under NDA.
+- **Sub-processors:** primary AWS, plus Google Cloud and Microsoft Azure. Published at `trust.anthropic.com/subprocessors`.
+- **Swiss-US DPF certification status:** **to be verified before each pilot** at Anthropic's Trust Center. If certified, adequacy covers the transfer. If not, Swiss SCCs apply.
+- **Liability:** limited to fees paid in the 12 months preceding a claim, with IP indemnity carve-outs. Enterprise tier can negotiate stronger terms.
+
+(All Anthropic facts from Anthropic Privacy Center and Trust Portal, access 2026-04-22. See `audit-sources.md`.)
+
+### Regions and the "Swiss-hosted" narrative — honest version
+
+A precision that corrects our earlier drafts. **Anthropic does not today offer a native Switzerland region for Claude.** The closest EU-resident options for a Swiss customer are:
+
+- **AWS Bedrock Frankfurt** (eu-central-1, with cross-region inference)
+- **Google Vertex AI Frankfurt** (direct in-region processing)
+- **Azure AI Sweden Central** (the unique EU region for Claude on Azure)
+
+None of these three is physically in Switzerland. For firms with absolute Swiss-residency requirements, the options are: (a) accept EU-region hosting with the pseudonymization layer as primary control, (b) use an open-weights model (Mistral, Llama) hosted on Swiss infrastructure (Infomaniak, Exoscale) with a voice-calibration penalty and quality trade-off, or (c) wait for Claude on Azure Switzerland when Microsoft and Anthropic bring it to the region.
+
+**What we communicate in sales:**
+- Pilot phase: pseudonymization-first + EU-region inference via Frankfurt or Sweden + commercial API + ZDR on request.
+- Full deployment: same, with the option to migrate to Swiss-hosted open-weights if the firm's internal policy mandates Swiss-only processing.
+- We do not promise "Swiss-hosted Claude" today. It would be technically inaccurate.
 
 ### What I commit, what I don't
 
-**I commit:** pilot services agreement, DPA (EAM = controller, me = processor), pseudonymization SOP + template, mutual NDA. Anthropic commercial tier (no training on inputs, 30-day retention for abuse monitoring).
+**I commit:** pilot services agreement, DPA with Swiss FADP addendum (auto-incorporated in Anthropic's Commercial ToS; mirrored in CRI's own processor agreement to the EAM), pseudonymization SOP + advisor template, mutual NDA, Anthropic commercial tier with no training on inputs and 30-day default retention (7-day for API logs), ZDR on enterprise contract.
 
-**I don't commit:** FINMA authorization (not required for an advisory tool), Swiss-hosted infrastructure in pilot phase, persistent storage of client data on my side (inputs are processed and discarded).
+**I don't commit:** FINMA authorization (not required for an advisory tool used inside the EAM); Swiss-hosted Claude infrastructure (does not exist today); persistent storage of client data on my infrastructure (inputs are processed and discarded); safe-harbour under FINMA for pseudonymization (no such safe harbour is on offer — we position the architecture as a layered control, not a silver bullet).
+
+Clarity on what the product is and is not **pre-empts** the tough compliance questions. The compliance pack is designed to survive a focused DPO review without friction.
 
 Clarity on what I am and am not **pre-empts** the tough compliance questions. The pack is designed to survive a 10-minute DPO review without friction.
 
@@ -347,17 +407,18 @@ Three projects started, zero shipped: VSL real estate agency, nightlife app, DJ 
 
 ### Strength patterns to double down on
 
-- Ralph's **four course corrections** in a row on positioning (no site, no CRI-experience on LinkedIn, no Skills section, no over-promise in outreach) proved more reliable than BOS default recommendations. Trust the instinct at first pushback.
-- Network-first approach: warm intros + Dubai family + future IE cohort = three acquisition waves in 12 months that most solo founders don't have. Exploit systematically.
+- Ralph's **eight course corrections** in a row on positioning and substance (no landing site, no CRI experience on LinkedIn, no Skills section, no over-promise in outreach, Part 1 pedagogical clarity triggered by father's feedback, voice-layer reframe beyond quarterly-only, compliance-as-product, three-horizon competitive framing that replaced a fabricated "30-50%" statistic) have consistently outperformed the default BOS recommendations. The operating rule is now explicit: at the first Ralph pushback on a positioning or factual claim, do not defend — investigate and restructure.
+- Network-first approach: warm intros + Dubai family + future IE cohort = three acquisition waves in 12 months that most solo founders do not have. Exploit systematically.
+- Sourced knowledge base: as of dossier v2.0 (audit 2026-04-22/23), every empirical claim in the canonical artefacts is either directly sourced (regulatory instruments, market stats, Anthropic terms) or explicitly flagged "industry estimate" with reasoning. This is a defensive moat when a compliance officer or a prospect's CFO interrogates a figure.
 
 ---
 
 ## Part 9. The 30-Day Execution Plan
 
-### Done (April 20-22)
+### Done (April 20-23)
 
 - Direction locked: AI × Swiss wealth, single module, Ralph-first brand architecture.
-- Market validated: 1,532 EAMs, whitespace confirmed, pricing defensible.
+- Market validated: **1,532 FINMA-approved portfolio managers + trustees (of 1,864 applications, 28 Feb 2025)**, industry-estimated 1,300-1,500 genuine EAMs. AUM: **~CHF 500 bn SAM members / ~CHF 887 bn full IAM sector extrapolation** (previous internal CHF 400 bn figure corrected upward in audit). Whitespace confirmed at the boutique-EAM tier; PMS-vendor AI features (WealthArc, Masttro) exist but are Q&A/data-structuring, not quarterly-letter drafting. Pricing defensible against a Swiss advisor loaded cost of CHF 200-400/hour.
 - Domains + handles reserved (`ralphchidiac.com/.ch`, YouTube channel live).
 - LinkedIn profile optimised (understated, stage-appropriate).
 - Module 1 artefacts: master prompt v1.1 hardened, fictional Perrin dataset, sample output, 90-second script, compliance one-pager, pilot measurement protocol, leave-behind pack.
@@ -391,33 +452,41 @@ First 5-10 warm outreach messages go out. Bilateral LinkedIn + email, following 
 
 ---
 
-## Part 10. Key Numbers (Appendix)
+## Part 10. Key Numbers (Appendix — sourced)
+
+Every figure in this appendix is sourced in `audit-sources.md`. Where no source exists, the value is flagged "industry estimate" with reasoning.
 
 ### Pricing
 
 | Format | Price | Scope |
 |---|---|---|
-| Pilot 30 days | **CHF 2,400** | 1 advisor, 20 real clients (pseudonymized) |
-| Full Deployment | **CHF 7,900 setup + CHF 499/month** | Whole firm, Swiss-hosted, tone-trained |
+| Pilot 30 days | **CHF 2,400** | 1 advisor, 20 real clients (pseudonymized inputs), quarterly-review use case |
+| Full Deployment | **CHF 7,900 setup + CHF 499 / month** | Voice layer calibrated for whole firm, EU-region hosting (Frankfurt or Sweden), all year-round use cases progressively unlocked |
 | Dubai pilot (summer 2026) | USD 2,600 | Mirror of Swiss pilot |
-| Dubai full deploy | USD 6,900 + USD 499/month | Mirror of Swiss deployment |
+| Dubai full deploy | USD 6,900 + USD 499 / month | Mirror of Swiss deployment |
 
-### Conversion targets (phase 1)
+### Conversion benchmarks — sourced to B2B public data, adjusted for Swiss DACH
 
-| Channel | Open → Respond | Respond → Meeting | Meeting → Pilot |
-|---|---|---|---|
-| Warm intro | 40-60% | 40-60% | 15-30% |
-| Cold email / LinkedIn | 5-10% | 30-50% | 5-15% |
+| Channel | Open → Respond | Respond → Meeting | Meeting → Pilot | Source notes |
+|---|---|---|---|---|
+| Warm intro (Swiss DACH adjusted) | **28-48%** | **11-20%** (meeting conv. on respondent pool) | **15-25%** | US baseline 40-60% / 15-25% / 15-30% × 0.7-0.8 DACH factor (Fluum, Optifai) |
+| Cold LinkedIn (accept → reply) | 18-23% accept × 8-11% reply | 30-40% of replies | 5-15% | Belkins, Alsona benchmarks × DACH factor |
+| Cold email financial services | **~2.5-3.4%** (FS industry benchmark, DACH-adjusted) | 30-50% of respondents | 3-10% | RemoteReps FS benchmark; SalesCaptain |
 
-Realistic funnel: 30 qualified messages → 8-10 responses → 3-5 meetings → 1-2 pilots by end of May.
+Realistic funnel for 30 qualified messages (warm-led): **~10 responses → 3-5 meetings → 1-2 pilots by end of May**. Funnel math holds only with disciplined cadence: max 2-3 LinkedIn touches per day, 5 emails/day per domain, follow-ups on D+3 / D+7 / D+14 strictly.
 
-### Market sizing
+### Market sizing — sourced
 
-- **1,532** FINMA-licensed EAMs post-FinIA
-- **~CHF 400bn** total AUM
-- **~200-300** firms in my target segment (3-30 FTE, French-speaking CH, HNWI book)
-- AI adoption among Swiss FIs: **~50%** (FINMA 2025)
-- Average time spent per quarterly review: **3-4 hours**, i.e. ~100 workdays/year on a 50-client book
+- **1,532 FINMA-approved** portfolio managers + trustees (of 1,864 applications, at 28 Feb 2025) — FINMA press release 11 Mar 2025. Pure trustees bundled into the count; industry-estimated **1,300-1,500 genuine EAMs**.
+- **~CHF 500 bn** AUM — SAM / VSV / ASG members only (2,500+ members) — VSV/ASG official.
+- **~CHF 887 bn** AUM — full Swiss IAM sector extrapolation — FIN21 / finews. **Preferred single headline number for pitching Swiss EAM TAM.**
+- **~200-300** firms in CRI's target segment (3-30 FTE, French-speaking CH, HNWI book) — derived from industry distribution (>80% of firms ≤10 employees; Geneva + Vaud clusters).
+- **AI adoption among Swiss FIs: ~50% in use, +25% planning within 3 years** — FINMA AI Survey April 2025 of ~400 institutions. **Not EAM-specific**; EAMs are in the underweighted "other institutions" slice of the survey.
+- **Advisor book size: 50 clients** per "real relationship" is the Kitces benchmark; Swiss EAM partners often carry 30-60 — consistent.
+- **Time per quarterly review: 3-4 hours**, derived from Kitces meeting-prep data (5.3 hrs/week prep × 3.8 quarterly meetings/week → ~1.4h prep + 2h meeting). Swiss HNWI clients likely at the upper end of this range. No Swiss-primary industry statistic on this exact figure; flagged as a defensible derivation.
+- **Workdays/year recoverable per advisor: 75-100** (50 clients × 3-4h × 4 quarters ÷ 8h/day).
+- **Loaded cost per hour for Swiss senior EAM advisor: CHF 200-400/hour** — derived from Glassdoor / PayScale / WealthBriefing EAM compensation data × Swiss employer-loading factor (15-25%) × firm-overhead factor (~50%).
+- **CRI pilot ROI — worked case:** 5-advisor firm × 100 workdays/year × 8 h/day × CHF 250/h midpoint = **CHF 1 million / year in recoverable qualified time vs CHF 5,988 subscription/year = ROI ~165×** on quarterly-review use case alone. Adding year-round use cases brings this to the CHF 1.3-1.6 million / year range (ROI 220-270×).
 
 ### Milestone timeline
 

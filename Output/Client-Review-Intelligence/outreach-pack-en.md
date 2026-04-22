@@ -201,7 +201,7 @@ Both objections will come up in most serious discovery calls. **Have the answers
 
 **Key follow-up if pushed:**
 
-> *"Also — the real risk with naked ChatGPT isn't the output quality. It's that your advisors are already tempted to paste cleartext client data into it, and most of them don't know that violates art. 47 BA. CRI removes that temptation structurally."*
+> *"Also — the real risk with naked ChatGPT isn't the output quality. It's that your advisors are already tempted to paste cleartext client data into it, and most of them don't know that your firm is bound by FinIA Art. 69 professional secrecy, plus flow-down obligations from your custodian banks under Art. 47 BA. CRI removes that temptation structurally by enforcing the pseudonymization layer in tooling, not in discretion."*
 
 ### Objection 2 : "Is it even compliant? Our clients fear data leaks."
 
@@ -221,7 +221,7 @@ Notice what this frame does : no made-up percentages, no moralising. It names th
 
 ### Rehearsal rule
 
-Read these answers aloud at least 3 times before the first discovery call. They must flow at natural speaking pace, not sound read. If you stumble over a phrase, rewrite it in your own register — but keep every specific (art. 47 BA, FINMA 08/2024, revised FADP, 40 hours, CHF bracket / canton / age bracket, refund clause). The specifics are what a compliance-minded advisor hears.
+Read these answers aloud at least 3 times before the first discovery call. They must flow at natural speaking pace, not sound read. If you stumble over a phrase, rewrite it in your own register — but keep every specific (**FinIA Art. 69** as the direct EAM instrument, Art. 47 BA indirectly via custodians, **FINMA Guidance 08/2024** published 18 Dec 2024, **revised FADP in force 1 Sept 2023**, **Swiss-US DPF adequacy since 15 Sept 2024**, 40 hours prompt engineering, CHF bracket / canton / age bracket, refund clause). The specifics are what a compliance-minded advisor hears. When in doubt on which instrument applies, remember : **FinIA Art. 69 is EAMs, Art. 47 BA is banks — mention both to show you know the distinction.**
 
 ---
 
