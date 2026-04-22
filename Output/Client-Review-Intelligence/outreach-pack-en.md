@@ -29,14 +29,14 @@
 **Limite : 300 caractères pour free tier. Viser 270-290.**
 
 ```
-Hi [First name] — Ralph Chidiac, EPFL Communication Systems, incoming IE Madrid MSc FinTech. [Mutual contact first name] suggested I reach out. With my brother, I'm building an AI review agent for Swiss EAMs — voice-trained per firm, cuts quarterly commentary prep to ~15 minutes per review. Would love to connect.
+Hi [First name] — Ralph Chidiac, EPFL Communication Systems, incoming IE Madrid MSc FinTech. [Mutual contact first name] suggested I reach out. I'm building an AI review agent for Swiss EAMs — voice-trained per firm, cuts quarterly commentary prep to ~15 minutes per review. Would love to connect.
 ```
 
 ### Variantes à tester
 
 **Variante A2 (plus sec) :**
 ```
-Hi [First name] — Ralph Chidiac, EPFL Communication Systems, incoming IE Madrid MSc FinTech. We have [Mutual contact] in common. With my brother, I'm building an AI quarterly review agent for Swiss EAMs — voice-trained per firm. Opening a Q2 pilot cohort. Happy to share more if it's relevant.
+Hi [First name] — Ralph Chidiac, EPFL Communication Systems, incoming IE Madrid MSc FinTech. We have [Mutual contact] in common. I'm building an AI quarterly review agent for Swiss EAMs — voice-trained per firm. Opening a Q2 pilot cohort. Happy to share more if it's relevant.
 ```
 
 ---
@@ -46,7 +46,7 @@ Hi [First name] — Ralph Chidiac, EPFL Communication Systems, incoming IE Madri
 **Usage :** pas de contact commun mais target qualifié (boutique EAM Geneva/Lausanne 3-30 FTE). Moins probable de convertir mais élargit le pipeline.
 
 ```
-Hi [First name] — Ralph Chidiac, EPFL Communication Systems, incoming IE Madrid MSc FinTech. With my brother, I'm building an AI review agent for Swiss EAMs — voice-trained per firm. Your boutique looks like exactly the type we'd want in our Q2 pilot cohort. Would love to connect and share the demo if it's useful.
+Hi [First name] — Ralph Chidiac, EPFL Communication Systems, incoming IE Madrid MSc FinTech. I'm building an AI review agent for Swiss EAMs — voice-trained per firm. Your boutique looks like exactly the type of firm I'd want in my Q2 pilot cohort. Would love to connect and share the demo if it's useful.
 ```
 
 **Note :** le cold LinkedIn convertit 3x moins que le warm. Privilégier les warms chaque fois que possible. Le cold sert à élargir le funnel quand les warms sont épuisés.
@@ -79,7 +79,7 @@ Hi [First name] — Ralph Chidiac, EPFL Communication Systems, incoming IE Madri
 ```
 Hi [First name],
 
-I'm Ralph Chidiac, final-year Communication Systems undergraduate at EPFL, heading to IE Business School in Madrid for a MSc FinTech this September. With my brother, I'm opening a Q2 pilot cohort — three Swiss EAMs, 30 days each.
+I'm Ralph Chidiac, final-year Communication Systems undergraduate at EPFL, heading to IE Business School in Madrid for a MSc FinTech this September. I'm opening a Q2 pilot cohort — three Swiss EAMs, 30 days each.
 
 How it works: during a week-0 setup, we calibrate an AI review agent on your firm's voice using two of your past commentaries. The agent then ingests a portfolio snapshot and quarterly market context for each of your clients, and produces the review package — executive summary, performance review with attribution math, market themes tied to actual holdings, meeting agenda, and advisor-only talking points the client never sees. Time per review goes from 3-4 hours to ~15 minutes. For a 50-client book, that's up to 100 workdays a year recovered per advisor.
 

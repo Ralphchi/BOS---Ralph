@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# Outputs from manual runs / smoke tests
+/outputs/
+/inputs/
+*_run-metadata.json
+
+# Never commit real mapping files — the examples/mapping-example.json is fictional and intentional
+mapping-*.json
+!examples/mapping-example.json

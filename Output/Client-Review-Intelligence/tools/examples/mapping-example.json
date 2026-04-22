@@ -1,0 +1,19 @@
+{
+  "_comment": "Fictional mapping for demo purposes only — based on the Marc Perrin fictional dataset. Real mapping files stay on the advisor's workstation and are never committed to any repo.",
+  "client_identifiers": {
+    "Dr. Marc Perrin": "Client_A",
+    "Marc Perrin": "Client_A",
+    "Dr. Perrin": "Client_A",
+    "Sylvie Perrin": "Spouse_A",
+    "Banque Pictet": "Custodian_CH_12"
+  },
+  "addresses": {
+    "Cologny, Geneva": "Canton of Geneva",
+    "Cologny": "Canton of Geneva"
+  },
+  "portfolio_values": {
+    "CHF 4 250 000": "CHF 4.0-4.5M",
+    "CHF 300k": "~7% of AUM",
+    "CHF 200k/year": "~5% of AUM/year"
+  }
+}
